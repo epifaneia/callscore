@@ -1,0 +1,55 @@
+{
+ "guion": "P06b",
+ "perfil": "P06",
+ "motivo": "reclama",
+ "_nota": "Interrumpe: cliente que reclama porque el técnico no apareció; el agente le corta tres veces y no reconoce la molestia. Una sola pregunta. Solución completa con fecha y cierre correcto.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenos días. Mire, ayer tenía cita con el técnico de nueve a dos, pedí el día libre en el trabajo, y no vino nadie. Nadie me llamó, nadie me avisó, y cuando llamé por la tarde me dijeron que..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿Me da su DNI y su fecha de nacimiento?",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Dos, dos, uno, uno, nueve, nueve, ocho, ocho, ce. El siete de marzo de mil novecientos ochenta. Y le decía que por la tarde me dijeron que ya me llamarían para dar otra cita, y hoy todavía no sé nada, y yo no puedo seguir..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Ya, consta aquí. La visita de ayer se canceló porque el técnico tuvo una urgencia en otra zona y no se reasignó.",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues alguien tendría que haberme avisado, porque yo perdí un día de trabajo para nada, y además..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le doy nueva cita. El técnico va mañana a primera hora, de ocho a once, y es la primera visita de su ruta, así que no depende de otras visitas. Le llamará media hora antes, y le envío ahora un mensaje con la cita y el número de la incidencia, que es el cuatro, ocho, cinco, cero. Además dejo registrada la cita fallida en su ficha.",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Bueno. A ver si mañana es verdad."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le resumo: técnico mañana de ocho a once, primera visita de la ruta, aviso media hora antes, mensaje con la cita e incidencia cuatro, ocho, cinco, cero. ¿Necesita algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias por llamar a Conecta. Buenos días."
+  }
+ ]
+}

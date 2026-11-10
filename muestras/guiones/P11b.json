@@ -1,0 +1,92 @@
+{
+ "guion": "P11b",
+ "perfil": "P11",
+ "motivo": "averia",
+ "_nota": "Tecnicismos: el cliente no tiene señal en el móvil en casa y explica mucho; el agente responde en jerga sin traducir, le hace repetir el DNI y solo usa una fórmula genérica. Resuelve con una reconfiguración remota. El cliente habla mucho más.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenos días. Mire, desde el viernes en casa no tengo cobertura en el móvil. Fuera de casa va bien, en la calle tengo todas las rayitas, pero en cuanto entro por la puerta se me queda sin señal, no puedo llamar ni recibir llamadas, y los mensajes me llegan con horas de retraso. Mi mujer tiene otra compañía y a ella le va perfectamente, así que no creo que sea la casa. Ya he apagado y encendido el móvil, le he quitado la tarjeta y se la he vuelto a poner, como vi en un vídeo, y nada."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Disculpe las molestias. ¿Me dice su DNI y fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí. Cuatro, siete, uno, ocho, dos, cinco, nueve, tres, hache. El treinta y uno de agosto de mil novecientos setenta y tres."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Perdone, ¿me lo repite?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Cuatro, siete, uno, ocho, dos, cinco, nueve, tres, hache. El treinta y uno de agosto de mil novecientos setenta y tres. Y lo que le decía, que es solo en casa. Ah, y otra cosa que no sé si importa: el jueves por la noche me llegó un mensaje de ustedes diciendo algo de una actualización de la red, y desde entonces es cuando empezó."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. ¿Su terminal es compatible con VoLTE y tiene activado el 4G plus?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Uy, pues no lo sé. Es un móvil de hace unos cuatro años, de los normales, no sé decirle el modelo exacto. ¿Cómo lo miro? ¿Eso es algo que tengo que activar yo? Porque yo no he tocado nada de la configuración, que no me atrevo, que la última vez que toqué algo me quedé sin internet una semana."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces, para confirmar: sin cobertura solo dentro de casa, desde el viernes, justo después del mensaje de la actualización de la red. ¿Es así?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, eso es, exactamente."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Tras la migración de la red, su IMSI ha quedado con un perfil sin VoLTE y el terminal no hace el fallback a 3G en el indoor. Le reprovisiono el perfil en el HLR y le fuerzo la configuración por OTA."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Perdone, no le he entendido. ¿Eso quiere decir que me cambian algo de la tarjeta, o del móvil? ¿Tengo que ir a una tienda? Porque si tengo que ir a una tienda, prefiero que me lo diga ya, que trabajo toda la semana."
+  },
+  {
+   "hablante": "agente",
+   "texto": "No tiene que ir a ninguna tienda. Le va a llegar un mensaje de configuración; cuando le llegue, reinicie el terminal y se registra en la red."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale. O sea, me llega un mensaje, apago y enciendo el móvil, y ya debería tener cobertura en casa. ¿Y si no funciona? ¿Vuelvo a llamar y explico todo otra vez desde el principio?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Si no funciona, vuelva a llamar y abrimos una incidencia de radio."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Bueno, pues vamos a probar. Muchas gracias. A ver si hay suerte, porque llevo cuatro días saliendo al rellano para hablar por teléfono y los vecinos ya me miran raro. Y además estoy pendiente de una llamada del médico para darme cita, y si me llaman a casa y no tengo cobertura, la pierdo y me ponen al final de la lista otra vez. Así que por favor, si esto no funciona, que alguien me llame al fijo de mi mujer, que le doy el número si hace falta."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Deme el número."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Es el nueve, uno, cuatro, cuatro, cinco, seis, siete, ocho, nueve. Está a nombre de mi mujer, Rosa, pero lo coge cualquiera de los dos, que estamos casi siempre en casa por las tardes."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le resumo: perfil reconfigurado, le llega un mensaje, reinicia el móvil y debería tener cobertura en casa; si no, nos llama. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, nada más. Gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Buenos días."
+  }
+ ]
+}

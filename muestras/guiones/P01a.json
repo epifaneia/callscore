@@ -1,0 +1,52 @@
+{
+ "guion": "P01a",
+ "perfil": "P01",
+ "motivo": "cargo",
+ "_nota": "Ejemplar: verifica antes de los datos, confirma el motivo, nombra la molestia, tramita la devolución con plazo y medio sin garantizar el resultado, resume y ofrece más ayuda.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola, buenos días. Mire, he visto en el banco que este mes me han cobrado la factura dos veces y no entiendo por qué. Además me ha pillado a final de mes, con el alquiler recién pagado, y me he quedado en números rojos. Ya me ha cobrado el banco una comisión por el descubierto, así que imagínese el disgusto."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entiendo que ver un cargo repetido en su cuenta preocupa; vamos a mirarlo ahora mismo. Para poder acceder a sus datos, ¿me indica su DNI y su fecha de nacimiento, por favor?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí. Es cuatro, cinco, seis, siete, ocho, nueve, uno, dos, zeta. Y nací el doce de marzo de mil novecientos ochenta y cuatro."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, ya está verificado. Para asegurarme de que miro lo correcto: ¿los dos cargos son de la factura de septiembre, de treinta y nueve euros con noventa cada uno?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Eso es, los dos del día uno, por el mismo importe. Lo he mirado tres veces porque no me lo creía. Y en la aplicación de ustedes solo me aparece una factura, por eso no entiendo de dónde sale el segundo cargo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Efectivamente, veo los dos cargos, y el segundo es un error nuestro; le pido disculpas. Lo que hago ahora es tramitar la devolución del cargo repetido. El departamento de facturación la confirma en un plazo de cinco días hábiles, y le llegará un mensaje al móvil con el número de la gestión."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, me quedo más tranquilo. ¿Tengo que hacer algo yo, mandar algún justificante del banco o rellenar algún papel? Porque no sé si me piden que demuestre lo del cargo repetido."
+  },
+  {
+   "hablante": "agente",
+   "texto": "No, no tiene que hacer nada más. Le resumo: devolución del segundo cargo tramitada, confirmación de facturación en cinco días hábiles y aviso por mensaje. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, eso era todo. Muchas gracias, de verdad, ha sido muy amable."
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Que tenga un buen día."
+  }
+ ]
+}

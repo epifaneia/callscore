@@ -1,0 +1,24 @@
+{
+  "_nota": "Reparto de la muestra, escrito a mano: nada aleatorio. Cuatro semanas de lunes a viernes, una llamada por agente y día (120). Sesgo claro a favor del Equipo Norte. El Equipo Sur recibe feedback el último día de la semana 2, sacado del análisis de esas dos semanas, y mejora en las semanas 3 y 4 en sondeo, escucha, solución y lenguaje (feedback.mejoran); la calidez mejora algo, el saludo y el cierre se mantienen, y sigue por detrás del Norte. tools/muestra/plan.py lo despliega y lo comprueba.",
+  "inicio": "2026-09-28",
+  "semanas": 4,
+  "variantes": 2,
+  "feedback": {"dia": "2026-10-09", "equipo": "sur", "mejoran": ["G2", "G3", "G5", "G7"],
+               "texto": "Sesión de feedback al Equipo Sur con lo que el Equipo Norte hace mejor en las semanas 1 y 2."},
+  "hora_por_agente": {"laura_gomez": "09:10", "pedro_ruiz": "10:25", "ines_soler": "11:40",
+                      "carlos_vidal": "09:35", "nuria_ferrer": "12:05", "alvaro_mena": "16:20"},
+  "agentes": {
+    "laura_gomez":  [["P01", "P02", "P04", "P03", "P01"], ["P02", "P01", "P03", "P12", "P01"],
+                     ["P01", "P04", "P02", "P01", "P03"], ["P03", "P01", "P02", "P04", "P01"]],
+    "pedro_ruiz":   [["P02", "P01", "P08", "P01", "P03"], ["P01", "P04", "P02", "P03", "P02"],
+                     ["P04", "P01", "P02", "P02", "P01"], ["P01", "P02", "P03", "P01", "P12"]],
+    "ines_soler":   [["P04", "P01", "P02", "P01", "P12"], ["P03", "P02", "P01", "P04", "P01"],
+                     ["P02", "P03", "P01", "P10", "P01"], ["P01", "P04", "P01", "P02", "P03"]],
+    "carlos_vidal": [["P05", "P07", "P11", "P04", "P06"], ["P06", "P05", "P12", "P11", "P04"],
+                     ["P04", "P01", "P10", "P04", "P01"], ["P01", "P04", "P01", "P10", "P01"]],
+    "nuria_ferrer": [["P11", "P05", "P04", "P06", "P12"], ["P05", "P10", "P06", "P04", "P11"],
+                     ["P01", "P05", "P04", "P12", "P01"], ["P04", "P01", "P12", "P01", "P06"]],
+    "alvaro_mena":  [["P06", "P04", "P05", "P10", "P11"], ["P11", "P06", "P05", "P09", "P04"],
+                     ["P12", "P04", "P01", "P04", "P10"], ["P01", "P04", "P01", "P04", "P10"]]
+  }
+}

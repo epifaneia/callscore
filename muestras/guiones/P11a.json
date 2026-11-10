@@ -1,0 +1,84 @@
+{
+ "guion": "P11a",
+ "perfil": "P11",
+ "motivo": "averia",
+ "_nota": "Tecnicismos: el cliente explica, pregunta y vuelve a preguntar; el agente responde en jerga sin traducir, le hace repetir el DNI y no reconoce la molestia más allá de una fórmula. Resuelve con un reinicio remoto. El cliente habla mucho más.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Le cuento, porque es un poco largo. Desde hace tres o cuatro días internet me va fatal. No es que se corte del todo, ¿eh?, pero va lentísimo, sobre todo por la tarde. Las páginas tardan muchísimo en cargar, los vídeos se paran cada dos por tres, y mi hijo dice que en los juegos va a saltos. He probado a apagar y encender el router, he probado a acercarme con el ordenador, y nada, sigue igual. Y yo estoy pagando la fibra buena, la de seiscientos."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Disculpe las molestias. ¿Me da su DNI y la fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, claro. Cinco, uno, dos, tres, ocho, siete, seis, cuatro, ese. Y nací el quince de abril de mil novecientos setenta y seis."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Perdone, ¿me lo repite?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Cinco, uno, dos, tres, ocho, siete, seis, cuatro, ese. El quince de abril de mil novecientos setenta y seis. Y lo que le decía: no es que no haya internet, es que va lento, muy lento, y justo por las tardes, que es cuando estamos todos en casa."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. ¿El problema es por cable o por wifi?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues por los dos, creo. El ordenador de mi hijo va por cable, y también le va lento. Y en el móvil, con el wifi, igual. Bueno, en el móvil a lo mejor un poco peor. No sé si eso le sirve de algo. Ah, y otra cosa: el router está en el salón, que es donde nos dijo el instalador que lo pusiéramos, y el cuarto de mi hijo está al fondo del pasillo, pero como él va por cable no creo que tenga que ver."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces, para confirmar: lento por cable y por wifi, sobre todo por las tardes, desde hace tres o cuatro días. ¿Es así?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, eso es."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Veo que la ONT no sincroniza bien: hay pérdida de potencia óptica en el PTRO, y el perfil FTTH está degradado. Le hago un reset remoto del perfil y un reaprovisionamiento."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Perdone, ¿un qué? No le he entendido nada. ¿Eso quiere decir que el problema es de mi casa, o de ustedes? ¿Tengo que comprar algo? ¿Tengo que cambiar el router? Porque si tengo que cambiar el router, prefiero saberlo ya, que el otro día un vecino me dijo que a él se lo cambiaron y le cobraron."
+  },
+  {
+   "hablante": "agente",
+   "texto": "No, no tiene que comprar nada. Es un reaprovisionamiento del perfil en la OLT. En unos minutos la ONT se resincroniza sola."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale... O sea, que lo arregla usted desde ahí, y yo no tengo que hacer nada. ¿Y cómo sé si ha funcionado? ¿Se me va a apagar el router, o algo? Porque mi hijo está conectado ahora mismo y si se le corta en medio de una partida me la va a liar."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Se reinicia solo. En cinco minutos tiene que tener la velocidad contratada. Si no, vuelva a llamar y le abrimos una incidencia de nivel dos."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Bueno, vale. Pues esperaré a ver. Si en cinco minutos va bien, perfecto, y si no, vuelvo a llamar. Y lo de nivel dos ya lo entenderé cuando toque, supongo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le resumo: reinicio remoto hecho, en cinco minutos debería tener los seiscientos megas, y si no, nos llama de nuevo. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, nada más. Bueno, sí, una cosa: si vuelvo a llamar, ¿tengo que contar todo esto otra vez desde el principio? Porque es la segunda vez que llamo esta semana y la primera vez me tuvieron un buen rato explicando lo mismo, y al final me dijeron que reiniciara el router, que es lo que ya había hecho. Y entre una cosa y otra, mi hijo lleva toda la semana diciéndome que cambiemos de compañía, que a sus amigos les va mejor. Yo de momento no quiero cambiar, pero tampoco quiero estar así todos los meses."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Queda registrado en su ficha. Buenas tardes."
+  }
+ ]
+}

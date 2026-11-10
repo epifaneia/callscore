@@ -1,0 +1,74 @@
+{
+ "guion": "P10a",
+ "perfil": "P10",
+ "motivo": "tarifa",
+ "_nota": "Espera muda: busca en el sistema dos veces dejando al cliente en silencio sin avisar. Una sola pregunta, una sigla sin explicar (ONT), fórmula genérica. Solución completa y buen cierre.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola, buenos días. Quiero cambiar la fibra a una de más velocidad. Ahora en casa teletrabajamos los dos, mi pareja y yo, y cuando coincidimos en videollamada se nos corta, y es bastante incómodo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Disculpe las molestias. ¿Me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, claro. Nueve, ocho, siete, seis, cinco, cuatro, tres, dos, eme. Nací el treinta de noviembre de mil novecientos ochenta y nueve."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Hola? ¿Sigue ahí?",
+   "pausa": 48
+  },
+  {
+   "hablante": "agente",
+   "texto": "Sí, sí, aquí estoy. Tiene contratados trescientos megas. ¿Le pongo los seiscientos?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues no sé, la verdad. Yo de esto entiendo poco. Lo que quiero es que no se nos corte cuando estamos los dos conectados, y que mi pareja pueda subir archivos grandes al trabajo sin esperar media hora. ¿Con seiscientos llega?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Con seiscientos van sobrados para dos videollamadas a la vez. La subida es de cinco euros al mes."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, pues adelante, póngamelo."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Oiga? ¿Sigue ahí?",
+   "pausa": 45
+  },
+  {
+   "hablante": "agente",
+   "texto": "Perdone, estaba tramitándolo. Ya está: el cambio a seiscientos megas se activa mañana entre las ocho y las diez de la mañana. No hace falta cambiar el router: cuando le llegue el mensaje de confirmación, solo tiene que reiniciar la ONT."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, mañana por la mañana estaré en casa, así que perfecto."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces le resumo: seiscientos megas desde mañana por la mañana, cinco euros más al mes, y un reinicio cuando le llegue el mensaje. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, eso es todo. Gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Que tenga un buen día."
+  }
+ ]
+}

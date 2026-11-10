@@ -1,0 +1,52 @@
+{
+ "guion": "P01b",
+ "perfil": "P01",
+ "motivo": "cargo",
+ "_nota": "Ejemplar: cuota del móvil cobrada dos veces. Verifica, confirma el detalle, nombra la molestia, anula y solicita la devolución con plazo y medio, resume y ofrece más ayuda.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué le puedo ayudar?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Llamo porque en la factura del móvil aparece dos veces la cuota de octubre, y me han cobrado el doble."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vaya, siento el susto de ver el cargo duplicado. Lo revisamos juntos. Antes, por seguridad, ¿me confirma el DNI del titular y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Claro. Siete, siete, uno, dos, tres, cuatro, cinco, seis, equis. Y nací el tres de julio de mil novecientos noventa."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Perfecto, gracias, ya está verificado. ¿Es la línea que termina en cuarenta y dos, y la cuota que se repite es la de veinte euros?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, esa. Veinte euros dos veces, el mismo día."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Lo confirmo: la cuota de octubre se generó dos veces por un fallo al renovar su tarifa, y es responsabilidad nuestra; disculpe. Ahora mismo anulo el cargo repetido y solicito la devolución de los veinte euros. El departamento de facturación la revisa en cinco días hábiles, y usted recibirá un correo con la confirmación."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Ah, pues estupendo. Pensaba que me iba a costar más."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Para nada. Entonces queda así: cargo repetido anulado, devolución de veinte euros solicitada y confirmación por correo en cinco días hábiles. ¿Necesita algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, nada más. Muchísimas gracias, ha sido muy rápido."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias a usted por llamar. Buenas tardes."
+  }
+ ]
+}

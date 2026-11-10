@@ -1,0 +1,44 @@
+{
+ "guion": "P12b",
+ "perfil": "P12",
+ "motivo": "baja",
+ "_nota": "Cierre abrupto: descuelga con «Dígame» y cuelga con «Adiós». En medio, correcto: verifica, sondea y confirma, solución completa. Una fórmula genérica.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Dígame."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. Quería dar de baja el paquete de fútbol, que ya se acabó la temporada que me interesaba."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿Me dice el DNI del titular y la fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Nueve, nueve, ocho, ocho, siete, siete, seis, seis, efe. El dieciséis de junio de mil novecientos ochenta y cinco."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. ¿Quiere quitar solo el fútbol, y mantener el resto de la televisión?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, solo el fútbol."
+  },
+  {
+   "hablante": "agente",
+   "texto": "De acuerdo, disculpe las molestias. El paquete de fútbol queda dado de baja desde el día uno del mes que viene, su factura baja quince euros, y hoy mismo le llega la confirmación por correo."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Perfecto, gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Adiós."
+  }
+ ]
+}

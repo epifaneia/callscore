@@ -1,0 +1,78 @@
+{
+ "guion": "P03a",
+ "perfil": "P03",
+ "motivo": "averia",
+ "_nota": "Ejemplar larga: avería en la calle; pide permiso y dice cuánto antes de cada espera, da cita técnica con franja, aviso y medio. No se resuelve en la llamada y no es culpa suya. Cliente conforme, no entusiasmado.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenos días. Mire, llevo desde el lunes sin internet en casa. La luz del router parpadea en rojo, y ya he probado a apagarlo y encenderlo varias veces, pero nada."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Lo siento mucho; tres días sin conexión en casa es un problema serio. Vamos a ver qué pasa. Primero, para acceder a su línea, ¿me facilita su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí. Cero, ocho, siete, seis, cinco, cuatro, tres, dos, ele. Nací el veinte de enero de mil novecientos setenta y ocho."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, verificado. Cuénteme un poco más, para no dejarme nada: ¿la luz roja es la del dibujo del globo, la de internet? ¿Y le falla también el teléfono fijo, o solo internet?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, la del globo. El fijo no lo uso, así que no sabría decirle. Lo que sí le digo es que mi hija tiene exámenes y está yendo a la biblioteca para poder conectarse."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entiendo, entonces es urgente para su familia. Le resumo lo que me cuenta: luz de internet en rojo desde el lunes, y ya ha reiniciado el router. Para comprobar la línea tengo que lanzar una prueba desde aquí, que tarda unos dos minutos. ¿Le importa esperar en línea mientras la hago?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, no, espero. Si eso me ahorra que venga alguien a casa para nada, espero lo que haga falta."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias por esperar. La prueba confirma que la señal no llega a su casa: el corte está en la calle, no en su router, así que usted no puede hacer nada más desde casa. Tengo que consultar la agenda de los técnicos. ¿Me permite otro minuto en espera?",
+   "pausa": 45
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, adelante, no se preocupe. Ya que estoy, prefiero esperar y saberlo todo hoy, que no tener que volver a llamar mañana y empezar otra vez desde el principio."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias de nuevo por la paciencia. Le he reservado una visita del técnico para este jueves, entre las nueve de la mañana y las dos de la tarde. El técnico le llamará media hora antes de llegar, y además le enviamos un mensaje al móvil con la cita. Si la reparación necesita más trabajo, el técnico le dirá allí mismo cuándo quedará resuelta.",
+   "pausa": 40
+  },
+  {
+   "hablante": "cliente",
+   "texto": "El jueves... Bueno, me hubiera gustado antes, pero si no hay otra opción, qué le vamos a hacer."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le entiendo, y lamento no poder darle una cita antes: es la primera libre en su zona. Si le parece, le anoto en la cita que hay una estudiante en casa, por si se libera un hueco antes y pueden adelantarla."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, anótelo, por favor. Y si pueden venir a primera hora, mejor, porque a partir de las doce tengo que irme a recogerla al instituto y no habría nadie en casa para abrir."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Anotado. Entonces le resumo: visita del técnico el jueves de nueve a dos, aviso media hora antes y un mensaje con la cita, y la nota para adelantarla si se puede. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, gracias. Por lo menos ya sé qué va a pasar."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias a usted por su paciencia. Que pase un buen día."
+  }
+ ]
+}

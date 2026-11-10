@@ -1,0 +1,33 @@
+{
+  "_nota": "Los KPIs son medias. Por llamada solo se guarda la medida; se juzga el promedio por semana, agente y equipo frente al objetivo del servicio. Una llamada larga y excelente no es mala: la duración solo es mala en promedio. Los 'medido' salen de los tiempos del audio; los 'jev' son preguntas cerradas. Fuentes en FUENTES y config/fuentes.json; 'propio' declara lo que es nuestro.",
+  "medidores": [
+    {"id": "duracion", "fuente": "medido", "texto": "Duración media de la conversación", "unidad": "s",
+     "objetivo": 100, "margen": 0.15, "mejor": "cerca",
+     "cita": {"doc": "lanbide", "donde": "§6.2, p. 15", "dice": "Tiempo de interlocución de 1 minuto 40 segundos de media."},
+     "cita_margen": {"doc": "lanbide", "donde": "§6.2, p. 15", "dice": "Desviación de las llamadas respecto una duración media de llamada."},
+     "propio": "Que el margen del 15 % se lea alrededor de la media de 100 s."},
+    {"id": "silencio", "fuente": "medido", "texto": "Silencio medio sobre el total", "unidad": "%",
+     "objetivo": 15, "mejor": "menor",
+     "cita": {"doc": "talkdesk", "donde": "p. 7, Call Center Etiquette", "resumen": "evitar silencios largos"},
+     "propio": "El objetivo del 15 %."},
+    {"id": "habla_agente", "fuente": "medido", "texto": "Tiempo de habla medio del agente", "unidad": "%",
+     "objetivo": 50, "margen": 0.3, "mejor": "cerca",
+     "cita": {"doc": "ica", "donde": "§2.4, p. 3", "dice": "el mejor interlocutor no es el que habla mucho, sino el que sabe escuchar"},
+     "propio": "El objetivo del 50 % y el margen."},
+    {"id": "interrupciones", "fuente": "medido", "texto": "Interrupciones medias por llamada", "unidad": "",
+     "objetivo": 0.5, "mejor": "menor",
+     "cita": {"doc": "ica", "donde": "§2.4, p. 3", "dice": "Espere a que el usuario termine de hablar antes de realizar alguna intervención."},
+     "propio": "El objetivo de media interrupción por llamada."},
+    {"id": "resuelto", "fuente": "jev", "tipo": "noul", "texto": "Llamadas resueltas", "unidad": "%",
+     "objetivo": 95, "mejor": "mayor",
+     "pregunta": "¿Queda resuelto el motivo de la llamada en esta misma llamada, sin que el cliente tenga que volver a llamar?",
+     "cita": {"doc": "lanbide", "donde": "§6.2, p. 14", "dice": "Porcentaje de llamadas resueltas 95%"},
+     "propio": "Que Jev lo decida desde la transcripción."},
+    {"id": "satisfaccion", "fuente": "jev", "tipo": "score", "texto": "Clientes satisfechos", "unidad": "%",
+     "objetivo": 85, "mejor": "mayor", "satisfecho_desde": 1,
+     "pregunta": "¿Cómo termina la llamada el cliente?",
+     "niveles": ["Enfadado o insatisfecho", "Conforme sin más", "Satisfecho y agradecido"],
+     "cita": {"doc": "lanbide", "donde": "§6.2, p. 15", "dice": "Porcentaje de satisfacción global de los usuarios con la calidad del servicio. 85%"},
+     "propio": "Estimarla desde la transcripción (el pliego la mide con encuestas) y contar como satisfecho desde «conforme»."}
+  ]
+}

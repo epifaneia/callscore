@@ -1,0 +1,48 @@
+{
+ "guion": "P05b",
+ "perfil": "P05",
+ "motivo": "cargo",
+ "_nota": "No pregunta: verifica, pero da por hecho que el cargo es el prorrateo de un cambio de tarifa y se extiende explicándolo; el cliente tenía otro problema. Solución vaga, sin resolver, cliente enfadado.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué le puedo ayudar?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. La factura de este mes me ha venido más alta."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vale. ¿Me dice su DNI y fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Ocho, ocho, siete, siete, seis, seis, cinco, cinco, ge. El uno de mayo de mil novecientos noventa y dos."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. Mire, eso es porque este mes se juntan dos tarifas: la antigua hasta el día del cambio y la nueva desde ese día. Por eso sale más alta. Es normal, y el mes que viene ya le viene la cuota de siempre."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pero yo no he cambiado de tarifa. Es que me han cobrado la factura dos veces."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Ah. Pues disculpe las molestias; eso lo mira facturación. Le dejo la incidencia y ya se pondrán en contacto con usted."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Y me devuelven el dinero?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Eso se lo dirán ellos. Gracias por llamar."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues muy bien. Adiós."
+  }
+ ]
+}

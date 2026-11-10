@@ -1,0 +1,56 @@
+{
+ "guion": "P04a",
+ "perfil": "P04",
+ "motivo": "tarifa",
+ "_nota": "Correcta sin calidez: saluda solo con la entidad, fórmula genérica ante la molestia, sondeo y solución completos, despedida seca sin ofrecer más ayuda.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Conecta, buenos días."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenos días. Quería cambiar mi tarifa del móvil, porque siempre me quedo sin datos a mitad de mes y es un fastidio."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Lamento las molestias. Para hacer el cambio tengo que verificar al titular: ¿me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí. Uno, dos, tres, cuatro, cinco, seis, siete, ocho, jota. Nací el cinco de mayo de mil novecientos ochenta y siete."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, verificado. ¿Cuántos datos suele gastar al mes, más o menos? ¿Y los usa para trabajar, o sobre todo para redes y vídeos?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sobre todo vídeos, en el tren, que tengo una hora de ida y otra de vuelta cada día. Creo que gasto unos treinta gigas, aunque algún mes, en vacaciones, seguro que más."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces, si lo he entendido bien, necesita al menos treinta gigas y le conviene algo de margen. ¿Es así?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, exacto."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Ahora tiene la tarifa de quince gigas por quince euros al mes. La de cincuenta gigas cuesta veinte euros al mes. Si la contrata, empieza a funcionar mañana, en esta factura solo le cobramos la parte de los días que quedan del mes, y le llega un mensaje cuando esté activa."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, pues póngame la de cincuenta."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Hecho. La tarifa de cincuenta gigas queda activa mañana y le llegará el mensaje de confirmación. Gracias por llamar, adiós."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, adiós."
+  }
+ ]
+}

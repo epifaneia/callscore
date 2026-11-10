@@ -1,0 +1,48 @@
+{
+ "guion": "P05a",
+ "perfil": "P05",
+ "motivo": "cargo",
+ "_nota": "No pregunta: verifica, pero da por hecho que el cargo es la cuota de un decodificador y se extiende explicándolo; ante el error del cliente, solución vaga. Sin resolver y cliente enfadado. El agente acapara la conversación.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. En la factura me sale un cargo que no entiendo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vale. Dígame su DNI y su fecha de nacimiento, por favor."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Dos, tres, cuatro, cinco, seis, siete, ocho, nueve, erre. El ocho de agosto de mil novecientos ochenta y dos."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. A ver, eso que ve es la cuota del nuevo decodificador, que se cobra una sola vez en la primera factura después de cambiar de equipo. Por eso le sale un importe distinto al de siempre. Es normal, y en la factura siguiente ya no aparece."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Yo no he cambiado de decodificador. Me lo han cobrado dos veces."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Bueno, disculpe las molestias; eso tiene que revisarlo facturación. Le paso la incidencia y ya le llamarán."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Y cuándo?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Eso ya se lo dirán ellos cuando lo revisen. Gracias por llamar."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues vaya. Adiós."
+  }
+ ]
+}

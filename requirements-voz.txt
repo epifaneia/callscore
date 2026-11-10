@@ -1,0 +1,6 @@
+# Entorno aparte para generar las llamadas con Kokoro-82M (torch con CUDA):
+#   python -m uv venv .venvs/kokoro -p 3.11
+#   python -m uv pip install -p .venvs/kokoro torch --index-url https://download.pytorch.org/whl/cu126
+#   python -m uv pip install -p .venvs/kokoro -r requirements-voz.txt
+kokoro==0.9.4
+soundfile

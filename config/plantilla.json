@@ -1,0 +1,15 @@
+{
+  "_nota": "Plantilla ficticia. En una empresa saldría del sistema de turnos o del ACD. El agente viene en la etiqueta de cada llamada; el equipo se deriva de aquí en código.",
+  "equipos": {
+    "norte": {"nombre": "Equipo Norte", "supervisor": "Marta Iglesias"},
+    "sur":   {"nombre": "Equipo Sur",   "supervisor": "Jorge Pardo"}
+  },
+  "agentes": {
+    "laura_gomez":  {"nombre": "Laura Gómez",  "equipo": "norte"},
+    "pedro_ruiz":   {"nombre": "Pedro Ruiz",  "equipo": "norte"},
+    "ines_soler":   {"nombre": "Inés Soler",   "equipo": "norte"},
+    "carlos_vidal": {"nombre": "Carlos Vidal", "equipo": "sur"},
+    "nuria_ferrer": {"nombre": "Nuria Ferrer",  "equipo": "sur"},
+    "alvaro_mena":  {"nombre": "Álvaro Mena", "equipo": "sur"}
+  }
+}

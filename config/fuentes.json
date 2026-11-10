@@ -1,0 +1,38 @@
+{
+  "_nota": "Documentos públicos de los que salen las líneas del formulario y los KPIs. No se redistribuyen: tools/verificar_citas.py los descarga a data/fuentes/ y comprueba que cada cita está literal.",
+  "consultado": "2026-10-26",
+  "docs": {
+    "ica": {
+      "titulo": "Anexo 2. Protocolo de atención canal telefónico",
+      "emisor": "Instituto Colombiano Agropecuario (ICA), entidad pública de Colombia",
+      "fecha": "PDF creado el 2022-08-23",
+      "url": "https://www.ica.gov.co/getattachment/atencion-al-ciudadano/Protocolo-de-Atencion-al-ciudadano/Protocolo-para-la-atencion-del-canal-Telefonico.pdf.aspx?lang=es-CO",
+      "formato": "pdf",
+      "uso": "Protocolo público de una entidad estatal. Se cita con referencia; no se copia el documento."
+    },
+    "lanbide": {
+      "titulo": "Pliego de prescripciones técnicas: Servicios de información y atención de Lanbide",
+      "emisor": "Lanbide, Servicio Vasco de Empleo (Gobierno Vasco)",
+      "fecha": "Pliego con previsiones de servicio para 2016",
+      "url": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso5325/es_doc/adjuntos/pliego_bases_tecnicas1.pdf",
+      "formato": "pdf",
+      "uso": "Documento de contratación pública. Se cita con referencia."
+    },
+    "slk": {
+      "titulo": "support-lead-kit · scorecards/default.yaml (Written Support QA v1)",
+      "emisor": "Burak Çevik (GitHub bcvk)",
+      "fecha": "2026",
+      "url": "https://raw.githubusercontent.com/bcvk/support-lead-kit/main/scorecards/default.yaml",
+      "formato": "texto",
+      "uso": "Licencia MIT. Pensado para soporte escrito; aquí se adapta a teléfono. De aquí sale la escala 0-1-2 y la idea de auto_fail."
+    },
+    "talkdesk": {
+      "titulo": "Call Center Call Scoring Evaluation Form Items",
+      "emisor": "Talkdesk (material comercial)",
+      "fecha": "2018",
+      "url": "https://prd-cdn-talkdesk.talkdesk.com/talkdesk_com/2018/03/10174537/call-center-call-scoring-evaluation-form-items.pdf",
+      "formato": "pdf",
+      "uso": "Material con derechos reservados. Solo se referencia con resumen propio y página; no se cita literal."
+    }
+  }
+}

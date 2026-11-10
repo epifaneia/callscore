@@ -1,0 +1,78 @@
+{
+ "guion": "P10b",
+ "perfil": "P10",
+ "motivo": "tarifa",
+ "_nota": "Espera muda: cambio de la tarifa de televisión; el agente consulta dos veces dejando al cliente en silencio sin avisar. Una sola pregunta, una sigla sin explicar (VOD), fórmula genérica. Solución completa y buen cierre.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué le puedo ayudar?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Quería quitar el paquete de cine de la televisión, que casi no lo vemos y lo estamos pagando todos los meses. Pero no sé si me penaliza o algo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Disculpe las molestias. ¿Me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Uno, tres, cinco, siete, nueve, dos, cuatro, seis, ene. El veintiocho de febrero de mil novecientos sesenta y ocho."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Hola? ¿Me oye?",
+   "pausa": 48
+  },
+  {
+   "hablante": "agente",
+   "texto": "Sí, aquí estoy. Tiene el paquete de cine por doce euros al mes. ¿Se lo quito?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, pero lo que le preguntaba: ¿me cobran algo por quitarlo? Porque cuando lo contraté me dijeron algo de un año mínimo, y no recuerdo si ya ha pasado el año o no."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Déjeme ver."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Sigue ahí?",
+   "pausa": 45
+  },
+  {
+   "hablante": "agente",
+   "texto": "Perdone, lo estaba comprobando. Ya ha pasado el año, así que no tiene ninguna penalización. Le doy de baja el paquete de cine desde el día uno del mes que viene. A partir de ese día, las películas del paquete dejan de aparecer en el VOD, y su factura baja doce euros."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, perfecto. Y si un día lo quiero volver a poner, por ejemplo en Navidad, que vienen los nietos, ¿puedo contratarlo solo un mes, o tengo que volver a comprometerme un año entero?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Puede contratarlo solo un mes cuando quiera, desde el propio menú de la televisión, y se lo quita igual al mes siguiente, sin permanencia."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Ah, pues mucho mejor así."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces le resumo: paquete de cine dado de baja desde el día uno, sin penalización, y doce euros menos al mes. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, eso era todo. Gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Buenas tardes."
+  }
+ ]
+}

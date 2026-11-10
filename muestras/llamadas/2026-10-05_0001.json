@@ -1,0 +1,74 @@
+{
+  "id": "2026-10-05_0001",
+  "fecha": "2026-10-05T09:14:00",
+  "agente_id": "laura_gomez",
+  "_nota": "Muestra escrita a mano. Llamada correcta: verifica, sondea, resuelve y cierra.",
+  "turnos": [
+    {
+      "hablante": "agente",
+      "inicio": 0.0,
+      "fin": 5.1,
+      "texto": "Buenos días, le atiende Laura de Atención al Cliente de Conecta. ¿En qué puedo ayudarle?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 5.6,
+      "fin": 14.0,
+      "texto": "Hola, mire, me han cobrado dos veces la factura de septiembre y quería saber qué ha pasado."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 14.5,
+      "fin": 21.0,
+      "texto": "Vaya, entiendo que ver un doble cargo preocupa. Para revisar su cuenta, ¿me indica su DNI y su fecha de nacimiento?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 21.4,
+      "fin": 28.0,
+      "texto": "Sí, cuatro cinco seis siete ocho nueve uno dos zeta, y nací el doce de marzo del ochenta y cuatro."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 29.0,
+      "fin": 33.5,
+      "texto": "Gracias, ya le tengo verificado. ¿El doble cargo es en la cuenta que termina en cuatro cuatro?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 34.0,
+      "fin": 36.0,
+      "texto": "Sí, esa es."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 41.0,
+      "fin": 52.0,
+      "texto": "Efectivamente veo dos cargos de treinta y nueve con noventa el día uno. Es un error nuestro. Voy a abrir una solicitud de devolución del segundo cargo; tendrá respuesta del departamento de facturación en un plazo de cinco días hábiles."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 52.5,
+      "fin": 55.0,
+      "texto": "Vale, perfecto. ¿Me llegará algún aviso?"
+    },
+    {
+      "hablante": "agente",
+      "inicio": 55.4,
+      "fin": 63.0,
+      "texto": "Sí, le llegará un SMS con el número de la solicitud. Entonces, resumiendo: devolución del cargo duplicado solicitada y respuesta en cinco días hábiles. ¿Puedo ayudarle en algo más?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 63.5,
+      "fin": 65.0,
+      "texto": "No, nada más. Muchas gracias, Laura."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 65.3,
+      "fin": 68.0,
+      "texto": "A usted. Que tenga un buen día."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "guion": "P12a",
+ "perfil": "P12",
+ "motivo": "baja",
+ "_nota": "Cierre abrupto: descuelga con «Dígame» y cuelga con «Adiós». En medio, todo correcto: verifica, sondea y confirma, solución completa. Solo una fórmula genérica.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Dígame."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. Quería dar de baja el teléfono fijo, que no lo uso nunca."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿Me dice el DNI del titular y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Uno, uno, dos, dos, tres, tres, cuatro, cuatro, de. El nueve de septiembre de mil novecientos sesenta y cuatro."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias. ¿Es solo el fijo, y quiere mantener internet y el móvil?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, solo el fijo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "De acuerdo, disculpe las molestias. La baja del fijo queda tramitada desde hoy. Su factura baja ocho euros a partir del mes que viene, y esta tarde le llega la confirmación por correo."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Perfecto."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Adiós."
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+logs/
+.venvs/
+# data/ fuera de git (audio, respuestas en bruto, PDFs de las fuentes),
+# salvo los resultados de la muestra
+data/*
+!data/jev.db
+!data/coaching.md
+!data/feedback.md
+!data/estadistica.html

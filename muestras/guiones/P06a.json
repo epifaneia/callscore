@@ -1,0 +1,55 @@
+{
+ "guion": "P06a",
+ "perfil": "P06",
+ "motivo": "reclama",
+ "_nota": "Interrumpe: cliente enfadado que reclama por tercera vez; el agente le corta tres veces, acapara la llamada y no reconoce la molestia. Una sola pregunta. Solución completa y cierre correcto.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Mire, es la tercera vez que llamo por lo mismo. Me cambiaron la tarifa sin pedirlo, y cada vez me dicen que ya está arreglado, y en la factura sigue igual, y yo ya no sé qué más tengo que..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿Me da el DNI del titular y la fecha de nacimiento?",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Cuatro, cuatro, tres, dos, uno, cero, nueve, ocho, te. El catorce de junio del setenta y uno. Y le decía que llevo dos meses pagando una tarifa que yo no pedí, y que cada vez que llamo..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Sí, ya lo veo aquí. En agosto se le cambió a la tarifa de sesenta euros, que incluye la televisión con los canales de deportes, y en su ficha consta el cambio pero no consta ninguna llamada suya pidiéndolo, así que el cambio no debió hacerse.",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Pues eso le digo. Y lo que quiero es que me devuelvan lo que he pagado de más, porque son ya..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vale. Lo que hago es lo siguiente. Primero le devuelvo su tarifa anterior, la de cuarenta euros, con efecto desde hoy. Después abro una reclamación por la diferencia de los dos meses, que son cuarenta euros en total. El departamento de facturación resuelve la reclamación en diez días hábiles y le envía la respuesta por correo electrónico. El número de reclamación es el siete, cuatro, uno, dos.",
+   "interrumpe": 1.5
+  },
+  {
+   "hablante": "cliente",
+   "texto": "A ver si esta vez es verdad."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le resumo para que lo tenga todo claro. Su tarifa vuelve a ser la de cuarenta euros desde hoy, y en la próxima factura ya no verá la de sesenta. La reclamación es la siete, cuatro, uno, dos, por los cuarenta euros de diferencia de agosto y septiembre, y facturación le responde por correo electrónico en diez días hábiles. Si en ese plazo no recibe nada, con ese número de reclamación cualquier compañero lo localiza enseguida. ¿Necesita algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias por llamar a Conecta. Buenas tardes."
+  }
+ ]
+}

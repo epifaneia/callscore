@@ -1,0 +1,211 @@
+<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Plan de la muestra</title><style>
+:root { --papel:#F7F5F0; --tinta:#1F2328; --tinta-2:#55524C; --muda:#8A8780; --linea:#E3E0D8;
+        --logro:#E3F0EA; --logro-t:#0B6E4F; --error:#F6E3DE; --error-t:#9A3218; }
+body { background:var(--papel); color:var(--tinta); font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+       margin:0 auto; max-width:1180px; padding:24px 16px 48px; }
+h1 { font-size:22px; margin:0 0 6px; } h2 { font-size:18px; margin:36px 0 8px; } h3 { font-size:15px; margin:20px 0 6px; }
+p { max-width:760px; } .sub { color:var(--tinta-2); }
+.ok { border-left:3px solid var(--logro-t); padding:6px 12px; background:var(--logro); }
+.mal { border-left:3px solid var(--error-t); padding:6px 12px; background:var(--error); }
+.scroll { overflow-x:auto; }
+table { border-collapse:collapse; font-size:13px; font-variant-numeric:tabular-nums; }
+th, td { text-align:left; padding:5px 8px; border-bottom:1px solid var(--linea); vertical-align:top; }
+th { color:var(--tinta-2); font-weight:600; }
+.factores td:first-child { white-space:nowrap; font-weight:600; }
+.matriz td, .matriz th { text-align:center; white-space:nowrap; }
+.matriz td:nth-child(-n+2), .matriz th:nth-child(-n+2) { text-align:left; }
+.l { background:var(--logro); color:var(--logro-t); font-weight:600; }
+.e { background:var(--error); color:var(--error-t); font-weight:600; }
+.tag { font-size:11px; padding:1px 6px; border-radius:4px; margin-left:6px; }
+.quien { color:var(--muda); font-size:12px; }
+.ley span { display:inline-block; padding:2px 8px; border-radius:4px; margin-right:8px; font-size:13px; }
+.dia{margin:18px 0 6px} .fb{border-left:3px solid var(--tinta);padding:6px 12px;background:#EFECE4} nav a{margin-right:12px}</style></head><body>
+<h1>Plan de la muestra</h1>
+<p class='sub'>120 llamadas en 4 semanas de lunes a viernes, una por agente y día. Nada aleatorio: el reparto está escrito a mano en <code>diseno/reparto.json</code>. Cada llamada sale de un perfil del catálogo; su nota esperada es la verdad contra la que se mide a Jev.</p>
+<p class='ok'>Comprobado: los doce perfiles aparecen, el Norte va por delante todas las semanas y el Sur mejora tras el feedback en nota y en las líneas trabajadas: G2, G3, G5, G7.</p>
+<h2>Lo que deberían enseñar los datos</h2><div class='scroll'><table><tr><th>Semana</th><th>Norte · calidad esperada</th><th>Sur · calidad esperada</th><th>Eliminadas Norte</th><th>Eliminadas Sur</th></tr>
+<tr><td>1</td><td>9.0</td><td>6.9</td><td>1</td><td>1</td></tr>
+<tr><td>2 · feedback al Sur</td><td>9.7</td><td>6.9</td><td>0</td><td>1</td></tr>
+<tr><td>3</td><td>9.7</td><td>8.7</td><td>0</td><td>0</td></tr>
+<tr><td>4</td><td>9.7</td><td>9.0</td><td>0</td><td>0</td></tr>
+</table></div>
+<h3>Cumplimiento esperado por línea</h3><p class='sub'>Las líneas marcadas son en las que el Norte saca 15 puntos o más al Sur antes del feedback: de ahí debe salir el feedback. Las trabajadas tras el feedback son G2, G3, G5, G7; ninguna otra cae más de 15 puntos.</p><div class='scroll'><table><tr><th>Línea</th><th>Norte</th><th>Sur, semanas 1-2</th><th>Sur, semanas 3-4</th></tr>
+<tr><td>E1 Verificación de identidad</td><td>98 %</td><td>100 %</td><td>100 %</td></tr>
+<tr><td>E2 Trato respetuoso</td><td>100 %</td><td>97 %</td><td>100 %</td></tr>
+<tr><td>E3 Sin promesas no autorizadas</td><td>100 %</td><td>97 %</td><td>100 %</td></tr>
+<tr><td>G1 Saludo y presentación</td><td>82 %</td><td>70 %</td><td>60 %</td></tr>
+<tr><td class='e'>G2 Sondeo de la necesidad</td><td>97 %</td><td>50 %</td><td>80 %</td></tr>
+<tr><td class='e'>G3 Escucha activa</td><td>100 %</td><td>57 %</td><td>97 %</td></tr>
+<tr><td class='e'>G4 Empatía</td><td>78 %</td><td>3 %</td><td>40 %</td></tr>
+<tr><td class='e'>G5 Solución y siguientes pasos</td><td>100 %</td><td>73 %</td><td>97 %</td></tr>
+<tr><td class='e'>G6 Cierre</td><td>80 %</td><td>50 %</td><td>57 %</td></tr>
+<tr><td class='e'>G7 Lenguaje claro</td><td>98 %</td><td>73 %</td><td>87 %</td></tr>
+<tr><td>N1 Espera con permiso</td><td>98 %</td><td>93 %</td><td>87 %</td></tr>
+</table></div>
+<h2>Día a día</h2><nav><a href='#s1'>Semana 1</a><a href='#s2'>Semana 2</a><a href='#s3'>Semana 3</a><a href='#s4'>Semana 4</a></nav>
+<h3 id='s1'>Semana 1</h3>
+<p class='dia'><b>Día 1</b> · lunes 28/9</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05a</td><td class=''>6.2</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11a</td><td class=''>7.9</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06a</td><td class=''>6.7</td></tr>
+</table></div>
+<p class='dia'><b>Día 2</b> · martes 29/9</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P07 Promete</td><td>P07a</td><td class='e'>0 · eliminada</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05b</td><td class=''>6.2</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='dia'><b>Día 3</b> · miércoles 30/9</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P08 Sin verificar</td><td>P08a</td><td class='e'>0 · eliminada</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11b</td><td class=''>7.9</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05a</td><td class=''>6.2</td></tr>
+</table></div>
+<p class='dia'><b>Día 4</b> · jueves 1/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06b</td><td class=''>6.7</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10a</td><td class=''>7.5</td></tr>
+</table></div>
+<p class='dia'><b>Día 5</b> · viernes 2/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P12 Cierre abrupto</td><td>P12a</td><td class=''>7.9</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06a</td><td class=''>6.7</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P12 Cierre abrupto</td><td>P12b</td><td class=''>7.9</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11a</td><td class=''>7.9</td></tr>
+</table></div>
+<h3 id='s2'>Semana 2</h3>
+<p class='dia'><b>Día 6</b> · lunes 5/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06b</td><td class=''>6.7</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05b</td><td class=''>6.2</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11b</td><td class=''>7.9</td></tr>
+</table></div>
+<p class='dia'><b>Día 7</b> · martes 6/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05a</td><td class=''>6.2</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10b</td><td class=''>7.5</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06a</td><td class=''>6.7</td></tr>
+</table></div>
+<p class='dia'><b>Día 8</b> · miércoles 7/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P12 Cierre abrupto</td><td>P12a</td><td class=''>7.9</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06b</td><td class=''>6.7</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05b</td><td class=''>6.2</td></tr>
+</table></div>
+<p class='dia'><b>Día 9</b> · jueves 8/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P12 Cierre abrupto</td><td>P12b</td><td class=''>7.9</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11a</td><td class=''>7.9</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P09 Falta de respeto</td><td>P09a</td><td class='e'>0 · eliminada</td></tr>
+</table></div>
+<p class='dia'><b>Día 10</b> · viernes 9/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P11 Tecnicismos</td><td>P11b</td><td class=''>7.9</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='fb'><b>Fin del día 10:</b> Sesión de feedback al Equipo Sur con lo que el Equipo Norte hace mejor en las semanas 1 y 2.</p>
+<h3 id='s3'>Semana 3</h3>
+<p class='dia'><b>Día 11</b> · lunes 12/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P12 Cierre abrupto</td><td>P12a</td><td class=''>7.9</td></tr>
+</table></div>
+<p class='dia'><b>Día 12</b> · martes 13/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P05 No pregunta</td><td>P05a</td><td class=''>6.2</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='dia'><b>Día 13</b> · miércoles 14/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10a</td><td class=''>7.5</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+</table></div>
+<p class='dia'><b>Día 14</b> · jueves 15/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P10 Espera muda</td><td>P10b</td><td class=''>7.5</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P12 Cierre abrupto</td><td>P12b</td><td class=''>7.9</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='dia'><b>Día 15</b> · viernes 16/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10a</td><td class=''>7.5</td></tr>
+</table></div>
+<h3 id='s4'>Semana 4</h3>
+<p class='dia'><b>Día 16</b> · lunes 19/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+</table></div>
+<p class='dia'><b>Día 17</b> · martes 20/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='dia'><b>Día 18</b> · miércoles 21/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02a</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03a</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P12 Cierre abrupto</td><td>P12a</td><td class=''>7.9</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+</table></div>
+<p class='dia'><b>Día 19</b> · jueves 22/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P04 Correcta sin calidez</td><td>P04b</td><td class=''>8.8</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P02 Ejemplar breve</td><td>P02b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10b</td><td class=''>7.5</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P04 Correcta sin calidez</td><td>P04a</td><td class=''>8.8</td></tr>
+</table></div>
+<p class='dia'><b>Día 20</b> · viernes 23/10</p><div class='scroll'><table><tr><th>Agente</th><th>Equipo</th><th>Perfil</th><th>Guion</th><th>Calidad esperada</th></tr>
+<tr><td>Laura Gómez</td><td>Equipo Norte</td><td>P01 Ejemplar</td><td>P01b</td><td class='l'>10.0</td></tr>
+<tr><td>Pedro Ruiz</td><td>Equipo Norte</td><td>P12 Cierre abrupto</td><td>P12b</td><td class=''>7.9</td></tr>
+<tr><td>Inés Soler</td><td>Equipo Norte</td><td>P03 Ejemplar larga</td><td>P03b</td><td class='l'>10.0</td></tr>
+<tr><td>Carlos Vidal</td><td>Equipo Sur</td><td>P01 Ejemplar</td><td>P01a</td><td class='l'>10.0</td></tr>
+<tr><td>Nuria Ferrer</td><td>Equipo Sur</td><td>P06 Interrumpe</td><td>P06a</td><td class=''>6.7</td></tr>
+<tr><td>Álvaro Mena</td><td>Equipo Sur</td><td>P10 Espera muda</td><td>P10a</td><td class=''>7.5</td></tr>
+</table></div>
+</body></html>

@@ -1,0 +1,40 @@
+{
+ "guion": "P08a",
+ "perfil": "P08",
+ "motivo": "baja",
+ "_nota": "Sin verificar: tramita la baja de una línea con solo el número de teléfono y lee los datos del titular. Por lo demás, eficaz y breve; fórmula genérica y despedida sin ofrecer más.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. Quiero dar de baja la línea de mi madre, que ya no la usa. Se ha venido a vivir conmigo y usa el teléfono de casa, así que esa línea solo nos cuesta dinero."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vale. ¿Qué número es?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "El seis, cero, cero, uno, dos, tres, cuatro, cinco, seis."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Ya la tengo: línea a nombre de Carmen Ruiz, con la tarifa de diez euros. ¿Quiere la baja desde hoy?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, desde hoy."
+  },
+  {
+   "hablante": "agente",
+   "texto": "De acuerdo, disculpe las molestias. La baja queda tramitada con fecha de hoy: la línea deja de funcionar esta noche, y la última factura llega el día uno con los días de este mes. Le enviamos la confirmación por mensaje a ese número. Gracias por llamar."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, gracias. Adiós."
+  }
+ ]
+}

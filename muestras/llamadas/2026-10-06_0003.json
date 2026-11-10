@@ -1,0 +1,62 @@
+{
+  "id": "2026-10-06_0003",
+  "fecha": "2026-10-06T16:05:00",
+  "agente_id": "carlos_vidal",
+  "_nota": "Muestra escrita a mano. Llamada mediocre: sin eliminatorias, poca empatía, solución sin plazo.",
+  "turnos": [
+    {
+      "hablante": "agente",
+      "inicio": 0.0,
+      "fin": 4.0,
+      "texto": "Buenas tardes, Conecta, le atiende Carlos."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 4.5,
+      "fin": 11.0,
+      "texto": "Buenas. Quiero cambiar mi tarifa móvil a una con más datos, que siempre me quedo sin ellos a mitad de mes."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 11.5,
+      "fin": 15.0,
+      "texto": "Vale. Dígame el DNI del titular y el código de seguridad."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 15.5,
+      "fin": 21.0,
+      "texto": "Siete siete uno dos tres cuatro cinco seis equis, y el código es cuatro cuatro uno nueve."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 30.0,
+      "fin": 36.0,
+      "texto": "Correcto. Tiene la tarifa de diez gigas. Hay una de cincuenta gigas por cinco euros más al mes."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 36.5,
+      "fin": 38.0,
+      "texto": "Vale, póngame esa."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 47.0,
+      "fin": 51.0,
+      "texto": "Hecho. Ya está cambiada. Algo más?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 51.5,
+      "fin": 54.0,
+      "texto": "¿Desde cuándo se aplica?"
+    },
+    {
+      "hablante": "agente",
+      "inicio": 55.0,
+      "fin": 58.0,
+      "texto": "Pues en breve. Adiós."
+    }
+  ]
+}

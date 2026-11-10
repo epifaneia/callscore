@@ -1,0 +1,119 @@
+<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Catálogo de la muestra</title><style>
+:root { --papel:#F7F5F0; --tinta:#1F2328; --tinta-2:#55524C; --muda:#8A8780; --linea:#E3E0D8;
+        --logro:#E3F0EA; --logro-t:#0B6E4F; --error:#F6E3DE; --error-t:#9A3218; }
+body { background:var(--papel); color:var(--tinta); font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+       margin:0 auto; max-width:1180px; padding:24px 16px 48px; }
+h1 { font-size:22px; margin:0 0 6px; } h2 { font-size:18px; margin:36px 0 8px; } h3 { font-size:15px; margin:20px 0 6px; }
+p { max-width:760px; } .sub { color:var(--tinta-2); }
+.ok { border-left:3px solid var(--logro-t); padding:6px 12px; background:var(--logro); }
+.mal { border-left:3px solid var(--error-t); padding:6px 12px; background:var(--error); }
+.scroll { overflow-x:auto; }
+table { border-collapse:collapse; font-size:13px; font-variant-numeric:tabular-nums; }
+th, td { text-align:left; padding:5px 8px; border-bottom:1px solid var(--linea); vertical-align:top; }
+th { color:var(--tinta-2); font-weight:600; }
+.factores td:first-child { white-space:nowrap; font-weight:600; }
+.matriz td, .matriz th { text-align:center; white-space:nowrap; }
+.matriz td:nth-child(-n+2), .matriz th:nth-child(-n+2) { text-align:left; }
+.l { background:var(--logro); color:var(--logro-t); font-weight:600; }
+.e { background:var(--error); color:var(--error-t); font-weight:600; }
+.tag { font-size:11px; padding:1px 6px; border-radius:4px; margin-left:6px; }
+.quien { color:var(--muda); font-size:12px; }
+.ley span { display:inline-block; padding:2px 8px; border-radius:4px; margin-right:8px; font-size:13px; }
+</style></head><body>
+<h1>Catálogo de la muestra</h1>
+<p class='sub'>Todo lo que puede pasar en una llamada de la muestra, y las combinaciones fijas que lo cubren. Nada es aleatorio. La nota esperada de cada perfil sale de las mismas fórmulas del pipeline con las respuestas de un Jev perfecto: es la verdad contra la que se mide al Jev real.</p>
+<p class='ok'>Cobertura completa: los 51 niveles de los 17 factores salen en al menos uno de los 12 perfiles. Reglas de coherencia: todas cumplidas.</p>
+<p class='ley'><span class='l'>logro</span><span class='e'>error</span><span>neutro / no aplica</span></p>
+<h2>1 · Factores y niveles</h2>
+<h3>Formulario de calidad</h3><div class='scroll'><table class='factores'><tr><th>Factor</th><th>Nivel</th><th>Qué pasa en la llamada</th><th>Perfiles</th></tr>
+<tr><td>E1 Verificación de identidad<span class='tag e'>eliminatoria</span></td><td class='l'>si</td><td>Pide documento y fecha de nacimiento antes de dar o tocar datos</td><td class='quien'>P01, P03, P04, P05, P06, P07, P09, P10, P11, P12</td></tr>
+<tr><td></td><td class='e'>no</td><td>Lee o cambia datos de la cuenta sin verificar</td><td class='quien'>P08</td></tr>
+<tr><td></td><td class=''>na</td><td>No se tocan datos de la cuenta: no aplica, cuenta como cumplida</td><td class='quien'>P02</td></tr>
+<tr><td>E2 Trato respetuoso<span class='tag e'>eliminatoria</span></td><td class='l'>si</td><td>Cortesía en toda la llamada, también con el cliente alterado</td><td class='quien'>P01, P02, P03, P04, P05, P06, P07, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class='e'>no</td><td>Reproche, ironía o respuesta cortante al cliente</td><td class='quien'>P09</td></tr>
+<tr><td>E3 Sin promesas no autorizadas<span class='tag e'>eliminatoria</span></td><td class='l'>si</td><td>Dice qué gestiona y cuándo habrá respuesta, sin garantizar el resultado</td><td class='quien'>P01, P03, P04, P05, P06, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class='e'>no</td><td>Garantiza un reembolso o un plazo que no depende de él</td><td class='quien'>P07</td></tr>
+<tr><td></td><td class=''>na</td><td>No surge nada que prometer: cuenta como cumplida</td><td class='quien'>P02, P09</td></tr>
+<tr><td>G1 Saludo y presentación</td><td class='e'>0</td><td>Descuelga sin saludar ni presentarse («Dígame»)</td><td class='quien'>P12</td></tr>
+<tr><td></td><td class='e'>1</td><td>Saluda y da solo la entidad o solo su nombre</td><td class='quien'>P04, P09</td></tr>
+<tr><td></td><td class='l'>2</td><td>Saludo, entidad, nombre y ofrecimiento de ayuda</td><td class='quien'>P01, P02, P03, P05, P06, P07, P08, P10, P11</td></tr>
+<tr><td>G2 Sondeo de la necesidad</td><td class='e'>0</td><td>No pregunta: actúa sobre lo primero que oye</td><td class='quien'>P05</td></tr>
+<tr><td></td><td class='e'>1</td><td>Una pregunta y supone el resto</td><td class='quien'>P06, P08, P09, P10</td></tr>
+<tr><td></td><td class='l'>2</td><td>Pregunta lo necesario y confirma con sus palabras antes de resolver</td><td class='quien'>P01, P02, P03, P04, P07, P11, P12</td></tr>
+<tr><td>G3 Escucha activa</td><td class='e'>0</td><td>Interrumpe varias veces al cliente</td><td class='quien'>P06</td></tr>
+<tr><td></td><td class='e'>1</td><td>Le hace repetir algo que ya había dicho</td><td class='quien'>P09, P11</td></tr>
+<tr><td></td><td class='l'>2</td><td>Deja terminar y retoma lo que dijo el cliente</td><td class='quien'>P01, P02, P03, P04, P05, P07, P08, P10, P12</td></tr>
+<tr><td>G4 Empatía</td><td class='e'>0</td><td>Trato mecánico, ignora la molestia</td><td class='quien'>P06, P09</td></tr>
+<tr><td></td><td class='e'>1</td><td>Solo fórmulas genéricas («disculpe las molestias»)</td><td class='quien'>P04, P05, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class='l'>2</td><td>Nombra la molestia concreta y se disculpa si es culpa de la empresa</td><td class='quien'>P01, P02, P03, P07</td></tr>
+<tr><td>G5 Solución y siguientes pasos</td><td class='e'>0</td><td>No da solución ni siguiente paso</td><td class='quien'>P09</td></tr>
+<tr><td></td><td class='e'>1</td><td>Solución vaga: «en breve», «ya le llamarán»</td><td class='quien'>P05, P07</td></tr>
+<tr><td></td><td class='l'>2</td><td>Qué pasa, quién lo hace, cuándo y por qué medio</td><td class='quien'>P01, P02, P03, P04, P06, P08, P10, P11, P12</td></tr>
+<tr><td>G6 Cierre</td><td class='e'>0</td><td>Corta sin cierre («Adiós»)</td><td class='quien'>P09, P12</td></tr>
+<tr><td></td><td class='e'>1</td><td>Se despide sin comprobar ni ofrecer más ayuda</td><td class='quien'>P04, P05, P08</td></tr>
+<tr><td></td><td class='l'>2</td><td>Resume, pregunta si necesita algo más y se despide</td><td class='quien'>P01, P02, P03, P06, P07, P10, P11</td></tr>
+<tr><td>G7 Lenguaje claro</td><td class='e'>0</td><td>Siglas y tecnicismos que el cliente no entiende (ONT, FTTH, prorrateo)</td><td class='quien'>P11</td></tr>
+<tr><td></td><td class='e'>1</td><td>Un término técnico sin explicar</td><td class='quien'>P10</td></tr>
+<tr><td></td><td class='l'>2</td><td>Lenguaje del cliente</td><td class='quien'>P01, P02, P03, P04, P05, P06, P07, P08, P09, P12</td></tr>
+<tr><td>N1 Espera con permiso</td><td class=''>na</td><td>No hay espera: cuenta como cumplida</td><td class='quien'>P01, P02, P04, P05, P06, P07, P08, P09, P11, P12</td></tr>
+<tr><td></td><td class='l'>si</td><td>Explica por qué y cuánto, y espera a que el cliente acepte</td><td class='quien'>P03</td></tr>
+<tr><td></td><td class='e'>no</td><td>Deja al cliente en silencio sin avisar</td><td class='quien'>P10</td></tr>
+</table></div>
+<h3>KPIs</h3><div class='scroll'><table class='factores'><tr><th>Factor</th><th>Nivel</th><th>Qué pasa en la llamada</th><th>Perfiles</th></tr>
+<tr><td> Duración de la conversación (variedad de la muestra, no un juicio)</td><td class=''>corta</td><td>Menos de un minuto</td><td class='quien'>P02, P05, P08, P12</td></tr>
+<tr><td></td><td class=''>objetivo</td><td>Alrededor de 1 min 40 s (media del pliego de Lanbide)</td><td class='quien'>P01, P04, P06, P07, P09</td></tr>
+<tr><td></td><td class=''>larga</td><td>Más de tres minutos</td><td class='quien'>P03, P10, P11</td></tr>
+<tr><td> Silencio sobre el total</td><td class=''>bajo</td><td>Pausas normales de conversación</td><td class='quien'>P01, P02, P04, P05, P06, P07, P08, P09, P11, P12</td></tr>
+<tr><td></td><td class=''>alto</td><td>Huecos largos mientras el agente busca</td><td class='quien'>P03, P10</td></tr>
+<tr><td> Interrupciones del agente</td><td class=''>0</td><td>Ninguna</td><td class='quien'>P01, P02, P03, P04, P05, P07, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class=''>1</td><td>Una</td><td class='quien'>P09</td></tr>
+<tr><td></td><td class=''>3+</td><td>Tres o más</td><td class='quien'>P06</td></tr>
+<tr><td> Resuelto en la llamada</td><td class=''>si</td><td>El motivo queda resuelto</td><td class='quien'>P01, P02, P04, P06, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class=''>no</td><td>El cliente tendrá que volver a llamar o esperar a un tercero</td><td class='quien'>P03, P05, P07, P09</td></tr>
+<tr><td> Cómo termina el cliente</td><td class=''>0</td><td>Enfadado o insatisfecho</td><td class='quien'>P05, P09</td></tr>
+<tr><td></td><td class=''>1</td><td>Conforme sin más</td><td class='quien'>P03, P04, P06, P08, P10, P11, P12</td></tr>
+<tr><td></td><td class=''>2</td><td>Satisfecho y agradecido</td><td class='quien'>P01, P02, P07</td></tr>
+</table></div>
+<h3>Contexto</h3><div class='scroll'><table class='factores'><tr><th>Factor</th><th>Nivel</th><th>Qué pasa en la llamada</th><th>Perfiles</th></tr>
+<tr><td> Motivo de la llamada</td><td class=''>cargo</td><td>Cobro duplicado en la factura</td><td class='quien'>P01, P05</td></tr>
+<tr><td></td><td class=''>averia</td><td>Avería: sin servicio desde hace días</td><td class='quien'>P03, P07, P11</td></tr>
+<tr><td></td><td class=''>tarifa</td><td>Cambio de tarifa</td><td class='quien'>P04, P10</td></tr>
+<tr><td></td><td class=''>consulta</td><td>Consulta general, sin datos de la cuenta (horarios, tiendas)</td><td class='quien'>P02</td></tr>
+<tr><td></td><td class=''>baja</td><td>Baja del servicio</td><td class='quien'>P08, P12</td></tr>
+<tr><td></td><td class=''>reclama</td><td>Reclamación reiterada, cliente enfadado</td><td class='quien'>P06, P09</td></tr>
+</table></div>
+<h2>2 · Reglas de coherencia</h2><ul>
+<li>Si motivo = consulta, entonces E1 = na: una consulta general no toca datos de la cuenta.</li>
+<li>Si G3 = 0, entonces interrupciones = 3+: interrumpir varias veces es lo que mide el contador.</li>
+<li>Si N1 = no, entonces silencio = alto: la espera muda es silencio en la grabación.</li>
+<li>Si E2 = no, entonces satisfaccion = 0: nadie acaba satisfecho tras una falta de respeto.</li>
+</ul>
+<h2>3 · Perfiles de llamada</h2><p class='sub'>Cada fila fija un nivel por factor. Varios puntos por llamada: casi todos los perfiles mezclan logros y errores.</p><div class='scroll'><table class='matriz'><tr><th>Perfil</th><th>Motivo</th><th title='Verificación de identidad'>E1</th><th title='Trato respetuoso'>E2</th><th title='Sin promesas no autorizadas'>E3</th><th title='Saludo y presentación'>G1</th><th title='Sondeo de la necesidad'>G2</th><th title='Escucha activa'>G3</th><th title='Empatía'>G4</th><th title='Solución y siguientes pasos'>G5</th><th title='Cierre'>G6</th><th title='Lenguaje claro'>G7</th><th title='Espera con permiso'>N1</th><th title='Duración de la conversación (variedad de la muestra, no un juicio)'>duración</th><th title='Silencio sobre el total'>silencio</th><th title='Interrupciones del agente'>interrupciones</th><th title='Resuelto en la llamada'>resuelto</th><th title='Cómo termina el cliente'>cómo</th><th>Calidad esperada</th></tr>
+<tr><td><b>P01</b> Ejemplar</td><td>cargo</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class=''>na</td><td class=''>objetivo</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>2</td><td>10.0</td></tr>
+<tr><td><b>P02</b> Ejemplar breve</td><td>consulta</td><td class=''>na</td><td class='l'>si</td><td class=''>na</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class=''>na</td><td class=''>corta</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>2</td><td>10.0</td></tr>
+<tr><td><b>P03</b> Ejemplar larga</td><td>averia</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>si</td><td class=''>larga</td><td class=''>alto</td><td class=''>0</td><td class=''>no</td><td class=''>1</td><td>10.0</td></tr>
+<tr><td><b>P04</b> Correcta sin calidez</td><td>tarifa</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='e'>1</td><td class='l'>2</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class=''>na</td><td class=''>objetivo</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>1</td><td>8.8</td></tr>
+<tr><td><b>P05</b> No pregunta</td><td>cargo</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='e'>0</td><td class='l'>2</td><td class='e'>1</td><td class='e'>1</td><td class='e'>1</td><td class='l'>2</td><td class=''>na</td><td class=''>corta</td><td class=''>bajo</td><td class=''>0</td><td class=''>no</td><td class=''>0</td><td>6.2</td></tr>
+<tr><td><b>P06</b> Interrumpe</td><td>reclama</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='e'>1</td><td class='e'>0</td><td class='e'>0</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class=''>na</td><td class=''>objetivo</td><td class=''>bajo</td><td class=''>3+</td><td class=''>si</td><td class=''>1</td><td>6.7</td></tr>
+<tr><td><b>P07</b> Promete</td><td>averia</td><td class='l'>si</td><td class='l'>si</td><td class='e'>no</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='l'>2</td><td class=''>na</td><td class=''>objetivo</td><td class=''>bajo</td><td class=''>0</td><td class=''>no</td><td class=''>2</td><td class='e'>0 · eliminada</td></tr>
+<tr><td><b>P08</b> Sin verificar</td><td>baja</td><td class='e'>no</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class=''>na</td><td class=''>corta</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>1</td><td class='e'>0 · eliminada</td></tr>
+<tr><td><b>P09</b> Falta de respeto</td><td>reclama</td><td class='l'>si</td><td class='e'>no</td><td class=''>na</td><td class='e'>1</td><td class='e'>1</td><td class='e'>1</td><td class='e'>0</td><td class='e'>0</td><td class='e'>0</td><td class='l'>2</td><td class=''>na</td><td class=''>objetivo</td><td class=''>bajo</td><td class=''>1</td><td class=''>no</td><td class=''>0</td><td class='e'>0 · eliminada</td></tr>
+<tr><td><b>P10</b> Espera muda</td><td>tarifa</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='l'>2</td><td class='e'>1</td><td class='e'>no</td><td class=''>larga</td><td class=''>alto</td><td class=''>0</td><td class=''>si</td><td class=''>1</td><td>7.5</td></tr>
+<tr><td><b>P11</b> Tecnicismos</td><td>averia</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='l'>2</td><td class='l'>2</td><td class='e'>1</td><td class='e'>1</td><td class='l'>2</td><td class='l'>2</td><td class='e'>0</td><td class=''>na</td><td class=''>larga</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>1</td><td>7.9</td></tr>
+<tr><td><b>P12</b> Cierre abrupto</td><td>baja</td><td class='l'>si</td><td class='l'>si</td><td class='l'>si</td><td class='e'>0</td><td class='l'>2</td><td class='l'>2</td><td class='e'>1</td><td class='l'>2</td><td class='e'>0</td><td class='l'>2</td><td class=''>na</td><td class=''>corta</td><td class=''>bajo</td><td class=''>0</td><td class=''>si</td><td class=''>1</td><td>7.9</td></tr>
+</table></div>
+<h2>4 · La mejor llamada</h2><p>Las mejores llamadas de la muestra son P03 Ejemplar larga, P01 Ejemplar, P02 Ejemplar breve: calidad 10 sobre 10. La más larga de todas es <b>P03 Ejemplar larga</b>: Avería compleja bien llevada: pide permiso para la espera, da cita técnica con fecha. No se resuelve en la llamada, y no es culpa suya.</p><p><b>Conclusión: una llamada larga y excelente es natural y buena.</b> Las mejores llamadas son las difíciles, y por definición necesitan más tiempo. Por eso la duración no puntúa ninguna llamada: es un KPI y los KPIs solo se juzgan en media, por semana, agente y equipo, frente al objetivo del servicio. La calidad, en cambio, sí se juzga llamada a llamada: una verificación que falta es un fallo sin más contexto.</p>
+<h3>Qué pasa en cada perfil</h3><div class='scroll'><table><tr><th>Perfil</th><th>Resumen</th><th>Líneas que fallan</th></tr>
+<tr><td><b>P01</b> Ejemplar</td><td>Todo bien: verifica, sondea, nombra la molestia, solución con plazo y resumen final.</td><td>—</td></tr>
+<tr><td><b>P02</b> Ejemplar breve</td><td>Consulta rápida bien atendida: no hay datos que verificar ni nada que prometer.</td><td>—</td></tr>
+<tr><td><b>P03</b> Ejemplar larga</td><td>Avería compleja bien llevada: pide permiso para la espera, da cita técnica con fecha. No se resuelve en la llamada, y no es culpa suya.</td><td>—</td></tr>
+<tr><td><b>P04</b> Correcta sin calidez</td><td>Resuelve bien pero en frío: saludo a medias, fórmulas genéricas y despedida seca.</td><td>G1, G4, G6</td></tr>
+<tr><td><b>P05</b> No pregunta</td><td>Actúa sobre lo primero que oye, da una solución vaga y el cliente tendrá que volver a llamar.</td><td>G2, G4, G5, G6</td></tr>
+<tr><td><b>P06</b> Interrumpe</td><td>No deja hablar al cliente enfadado: lo corta, acapara la llamada y no reconoce la molestia.</td><td>G2, G3, G4</td></tr>
+<tr><td><b>P07</b> Promete</td><td>Amable y resolutivo en apariencia, pero garantiza el arreglo para mañana y la devolución del mes. Eliminatoria aunque el trato sea bueno.</td><td>E3, G5</td></tr>
+<tr><td><b>P08</b> Sin verificar</td><td>Eficaz y breve, pero tramita la baja con solo el número de teléfono. Eliminatoria.</td><td>E1, G2, G4, G6</td></tr>
+<tr><td><b>P09</b> Falta de respeto</td><td>Ante un cliente que repite su queja, el agente le reprocha que llame tanto y no da salida. Eliminatoria: a revisión de calidad.</td><td>E2, G1, G2, G3, G4, G5, G6</td></tr>
+<tr><td><b>P10</b> Espera muda</td><td>Busca en el sistema dejando al cliente en silencio sin avisar; sondeo corto y un término técnico.</td><td>G2, G4, G7, N1</td></tr>
+<tr><td><b>P11</b> Tecnicismos</td><td>Explica la avería en jerga; el cliente pregunta una y otra vez y el agente le hace repetir datos.</td><td>G3, G4, G7</td></tr>
+<tr><td><b>P12</b> Cierre abrupto</td><td>Descuelga con «Dígame», tramita bien y cuelga con «Adiós».</td><td>G1, G4, G6</td></tr>
+</table></div></body></html>

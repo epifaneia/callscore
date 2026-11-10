@@ -1,0 +1,44 @@
+{
+ "guion": "P02a",
+ "perfil": "P02",
+ "motivo": "consulta",
+ "_nota": "Ejemplar breve: consulta sin datos de cuenta; pregunta la zona, reconoce la molestia concreta, responde con todo y resume.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola. Llevo un rato buscando en la web si tienen tienda en Valladolid y no lo encuentro. Quiero ver los móviles nuevos en persona."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entiendo, en la web no es fácil de encontrar; se lo digo yo. ¿Por qué zona de Valladolid se mueve?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Por el centro. Trabajo cerca de la Plaza Mayor, así que me vendría bien algo por ahí para pasarme a la salida."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces le viene bien la tienda de la calle Santiago, número doce. Abre de lunes a sábado, de diez de la mañana a ocho de la tarde, sin cerrar a mediodía."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Perfecto, me pilla al lado del trabajo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Se lo resumo: calle Santiago doce, de lunes a sábado, de diez a ocho. ¿Le ayudo con algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, eso es todo. ¡Muchas gracias!"
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Que tenga buen día."
+  }
+ ]
+}

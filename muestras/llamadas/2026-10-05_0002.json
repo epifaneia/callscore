@@ -1,0 +1,62 @@
+{
+  "id": "2026-10-05_0002",
+  "fecha": "2026-10-05T11:40:00",
+  "agente_id": "pedro_ruiz",
+  "_nota": "Muestra escrita a mano. Fallos sembrados: da datos sin verificar (E1), promete reembolso (E3), interrumpe, no resume.",
+  "turnos": [
+    {
+      "hablante": "agente",
+      "inicio": 0.0,
+      "fin": 2.5,
+      "texto": "Conecta, dígame."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 3.0,
+      "fin": 12.0,
+      "texto": "Hola, llamo porque llevo tres días sin internet en casa y ya he llamado dos veces y nadie me..."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 10.5,
+      "fin": 14.0,
+      "texto": "Ya, ya. ¿Qué número de teléfono tiene la línea?"
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 14.5,
+      "fin": 18.0,
+      "texto": "El seis uno dos, tres cuatro cinco, seis siete ocho."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 26.0,
+      "fin": 35.0,
+      "texto": "A ver, la línea está a nombre de Rosa Delgado, calle Mayor catorce, y tiene contratados seiscientos megas. Hay una incidencia abierta en su zona."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 35.5,
+      "fin": 42.0,
+      "texto": "¿Y cuándo lo van a arreglar? Porque yo trabajo desde casa y esto es un desastre."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 41.0,
+      "fin": 47.0,
+      "texto": "Mañana seguro que está. Y le devolvemos el mes entero, no se preocupe."
+    },
+    {
+      "hablante": "cliente",
+      "inicio": 47.5,
+      "fin": 50.0,
+      "texto": "Bueno, eso espero."
+    },
+    {
+      "hablante": "agente",
+      "inicio": 50.5,
+      "fin": 52.0,
+      "texto": "Hala, venga, adiós."
+    }
+  ]
+}

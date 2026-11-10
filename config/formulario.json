@@ -1,0 +1,329 @@
+{
+  "_nota": "Formulario de calidad para llamadas. Cada línea cita de dónde sale (ver FUENTES.md). Lo que no sale de una fuente se declara en 'propio'. Las eliminatorias y los 'noul' se redactan en positivo (sí = cumple). Los 'score' usan la escala de tres niveles de support-lead-kit (no cumple, cumple en parte, cumple del todo). El consejo está escrito de antemano: Jev elige cuál aplica, nunca lo redacta.",
+  "umbral_noul": 0.5,
+  "banda_dudosa": [
+    0.35,
+    0.65
+  ],
+  "confianza_minima": 0.5,
+  "score_cumple_desde": 0.75,
+  "gravedad_peso": {
+    "eliminatoria": 3,
+    "grave": 2,
+    "leve": 1
+  },
+  "_propio_generales": "Umbral 0,5, banda dudosa 0,35-0,65, confianza mínima 0,5, cumple desde el 75 % del máximo y pesos de gravedad 3/2/1: decisiones nuestras, a calibrar con llamadas etiquetadas.",
+  "lineas": [
+    {
+      "id": "E1",
+      "tipo": "noul",
+      "gravedad": "eliminatoria",
+      "texto": "Verificación de identidad",
+      "pregunta": "¿El agente verifica la identidad del cliente (documento, fecha de nacimiento o código de seguridad) antes de dar o cambiar datos de la cuenta? Si en la llamada no se dan ni cambian datos de la cuenta, responde sí.",
+      "consejo": "Antes de dar o tocar cualquier dato de la cuenta, pide los datos de verificación y espera a confirmarlos. Sin verificación no hay datos.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.1, p. 2",
+          "dice": "En el caso que sea necesario, validar la identidad de la persona."
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 3, Account Verification",
+          "resumen": "verificar la cuenta con la información adecuada"
+        },
+        {
+          "doc": "slk",
+          "donde": "scorecards/default.yaml, policy",
+          "dice": "Policy and process were followed (refunds, escalation, verification)",
+          "auto_fail": true
+        }
+      ],
+      "propio": "Que sea eliminatoria se apoya en el auto_fail de slk; la excepción de llamadas sin datos de cuenta es nuestra."
+    },
+    {
+      "id": "E2",
+      "tipo": "noul",
+      "gravedad": "eliminatoria",
+      "texto": "Trato respetuoso",
+      "pregunta": "¿El agente trata al cliente con cortesía y respeto durante toda la llamada, sin desprecio, ironía, gritos ni respuestas cortantes?",
+      "consejo": "Aunque el cliente esté alterado, el tono del agente no sube. Reconoce el enfado sin devolverlo y vuelve a la solución.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "Conserve siempre la cortesía, la tolerancia, los buenos modales y el respeto"
+        },
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "Evite las respuestas con expresiones cortantes"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 7, Call Center Etiquette",
+          "resumen": "trato amable, educado y profesional"
+        }
+      ],
+      "propio": "Ninguna fuente la hace eliminatoria: es decisión nuestra."
+    },
+    {
+      "id": "E3",
+      "tipo": "noul",
+      "gravedad": "eliminatoria",
+      "texto": "Sin promesas no autorizadas",
+      "pregunta": "¿Evita el agente dar por seguro un resultado que no depende de él?",
+      "consejo": "No garantices reembolsos ni plazos que no dependen de ti. Di lo que vas a gestionar y cuándo tendrá respuesta.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 4",
+          "dice": "Comprométase con lo que puede cumplir."
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 5, Protocol Compliance",
+          "resumen": "autorización previa para descuentos o reembolsos"
+        },
+        {
+          "doc": "slk",
+          "donde": "scorecards/default.yaml, policy",
+          "dice": "Policy and process were followed (refunds, escalation, verification)",
+          "auto_fail": true
+        }
+      ],
+      "propio": "Redacción de la pregunta y de sus criterios de sí y no. Primera versión, con doble negación, eliminó por error una llamada ejemplar el día 1 (ver README, desvío).",
+      "criterios": {
+        "true": "Sí lo evita: dice qué tramita o gestiona, quién lo resuelve y cuándo habrá respuesta, sin asegurar el resultado final. Tramitar algo que está en su mano (una devolución, un cambio de tarifa, una cita, una reclamación) y explicar el plazo de respuesta es lo correcto. Si en la llamada no surge nada que prometer, también es sí.",
+        "false": "No lo evita: asegura como un hecho algo que no depende de él, por ejemplo que una reparación quedará terminada en un día concreto, o una compensación o un abono que nadie ha autorizado."
+      }
+    },
+    {
+      "id": "G1",
+      "tipo": "score",
+      "gravedad": "leve",
+      "peso": 1,
+      "texto": "Saludo y presentación",
+      "pregunta": "¿Cómo abre la llamada el agente?",
+      "niveles": [
+        "No saluda o no se presenta",
+        "Saluda y da solo su nombre o solo la entidad",
+        "Saluda, da la entidad y su nombre y ofrece ayuda"
+      ],
+      "consejo": "Abre siempre con el guion completo: saludo, entidad, tu nombre y ofrecimiento de ayuda.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.1, p. 2",
+          "dice": "Nombre de la entidad, “buenos días/ tardes, habla con…"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 3, Greeting",
+          "resumen": "seguir el guion, identificarse y nombrar la empresa"
+        }
+      ],
+      "propio": "Descripción de los niveles."
+    },
+    {
+      "id": "G2",
+      "tipo": "score",
+      "gravedad": "grave",
+      "peso": 2,
+      "texto": "Sondeo de la necesidad",
+      "pregunta": "¿Cómo identifica el agente el motivo real de la llamada?",
+      "niveles": [
+        "No pregunta y actúa a ciegas",
+        "Pregunta lo mínimo y supone el resto",
+        "Pregunta lo necesario y confirma lo entendido antes de resolver"
+      ],
+      "consejo": "Antes de resolver, pregunta hasta poder decir el motivo con tus palabras y que el cliente lo confirme.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "formulando preguntas abiertas o generales o cerradas específicas"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 4 y p. 6",
+          "resumen": "preguntas pertinentes para diagnosticar; resumir los puntos del cliente antes de proponer solución"
+        }
+      ],
+      "propio": "Descripción de los niveles."
+    },
+    {
+      "id": "G3",
+      "tipo": "score",
+      "gravedad": "grave",
+      "peso": 2,
+      "texto": "Escucha activa",
+      "pregunta": "¿Escucha el agente al cliente?",
+      "niveles": [
+        "Interrumpe o ignora lo que dice el cliente",
+        "Escucha a medias y le hace repetir",
+        "Deja terminar al cliente y usa lo que dijo en la respuesta"
+      ],
+      "consejo": "Deja terminar al cliente y retoma sus palabras al responder: demuestra que has escuchado.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "Espere a que el usuario termine de hablar antes de realizar alguna intervención."
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 7, Call Center Etiquette",
+          "resumen": "escucha activa; no interrumpir ni hablar encima"
+        }
+      ],
+      "propio": "Descripción de los niveles. Las interrupciones también se miden en código (kpis.json).",
+      "contraste": {
+        "medidor": "interrupciones",
+        "desde": 3,
+        "porque": "si el medidor cuenta tres o más interrupciones del agente, una escucha dada por buena se contradice con lo medido"
+      }
+    },
+    {
+      "id": "G4",
+      "tipo": "score",
+      "gravedad": "leve",
+      "peso": 1,
+      "texto": "Empatía",
+      "pregunta": "¿Reconoce el agente la situación concreta del cliente?",
+      "niveles": [
+        "No la reconoce, trato mecánico",
+        "Solo fórmulas de cortesía genéricas",
+        "Reconoce la molestia concreta y se disculpa si procede"
+      ],
+      "consejo": "Nombra la molestia concreta del cliente antes de pasar a la solución, y discúlpate si la causa es vuestra.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "Póngase en “los zapatos” del usuario"
+        },
+        {
+          "doc": "slk",
+          "donde": "scorecards/default.yaml, acknowledge",
+          "dice": "The customer's frustration or situation is acknowledged specifically, not generically"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 4, Problem-Solving",
+          "resumen": "disculparse por el problema y las molestias"
+        }
+      ],
+      "propio": "Descripción de los niveles."
+    },
+    {
+      "id": "G5",
+      "tipo": "score",
+      "gravedad": "grave",
+      "peso": 3,
+      "texto": "Solución y siguientes pasos",
+      "pregunta": "¿Cómo de clara y completa es la solución o el siguiente paso que da el agente?",
+      "niveles": [
+        "No da solución ni siguiente paso",
+        "Da una solución vaga, sin plazo ni pasos",
+        "Da la solución o los pasos a seguir, con plazo y medio"
+      ],
+      "consejo": "Cierra la solución con qué va a pasar, quién lo hace, cuándo y por qué medio. Si no puedes resolver, di el siguiente paso concreto.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 4",
+          "dice": "Informe una fecha probable y el medio utilizado para entregarlo."
+        },
+        {
+          "doc": "slk",
+          "donde": "scorecards/default.yaml, resolved",
+          "dice": "The issue is resolved or the customer knows exactly what happens next and when"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 4, Problem-Solving",
+          "resumen": "informar del plazo estimado de resolución"
+        }
+      ],
+      "propio": "Peso 3: slk da a la categoría de resolución el mayor peso (35 de 100); la proporción es nuestra."
+    },
+    {
+      "id": "G6",
+      "tipo": "score",
+      "gravedad": "leve",
+      "peso": 1,
+      "texto": "Cierre",
+      "pregunta": "¿Cómo cierra la llamada el agente?",
+      "niveles": [
+        "Corta sin cierre",
+        "Se despide sin comprobar ni ofrecer más ayuda",
+        "Comprueba que se entendió, ofrece más ayuda y se despide amablemente"
+      ],
+      "consejo": "Antes de despedirte, comprueba que el cliente entendió lo acordado y pregunta si puedes ayudar en algo más.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.5, p. 4",
+          "dice": "Verificar con el usuario que entendió la información y preguntarle si hay algo más"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 8, Closure",
+          "resumen": "preguntar si hay más dudas antes de terminar; dar las gracias"
+        }
+      ],
+      "propio": "Descripción de los niveles."
+    },
+    {
+      "id": "G7",
+      "tipo": "score",
+      "gravedad": "leve",
+      "peso": 1,
+      "texto": "Lenguaje claro",
+      "pregunta": "¿Usa el agente un lenguaje que el cliente entiende?",
+      "niveles": [
+        "Tecnicismos o siglas sin explicar que confunden",
+        "Algún término técnico sin explicar",
+        "Lenguaje claro y adaptado al cliente"
+      ],
+      "consejo": "Cambia siglas y tecnicismos por palabras del cliente; si necesitas el término, explícalo.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3",
+          "dice": "evite el uso de tecnicismos, abreviaturas, siglas, extranjerismos"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 7, Call Center Etiquette",
+          "resumen": "evitar la jerga complicada"
+        }
+      ],
+      "propio": "Descripción de los niveles."
+    },
+    {
+      "id": "N1",
+      "tipo": "noul",
+      "gravedad": "leve",
+      "peso": 1,
+      "texto": "Espera con permiso",
+      "pregunta": "Si el agente pone al cliente en espera, ¿explica el motivo y pide permiso antes? Si no hay espera en la llamada, responde sí.",
+      "consejo": "Antes de dejar en espera, di por qué y cuánto será, y espera a que el cliente acepte.",
+      "fuentes": [
+        {
+          "doc": "ica",
+          "donde": "§2.4, p. 3-4",
+          "dice": "Explique al usuario por qué debe poner la llamada en espera"
+        },
+        {
+          "doc": "talkdesk",
+          "donde": "p. 6, Call-Handling",
+          "resumen": "pedir permiso antes de poner en espera"
+        }
+      ],
+      "propio": "La excepción de llamadas sin espera."
+    }
+  ],
+  "_fuera": "slk marca como auto_fail 'información correcta' (correct_info). No se incluye: Jev no puede saber si una respuesta es correcta sin la base de conocimiento del servicio. Queda como siguiente pieza (contexto con la normativa del servicio)."
+}

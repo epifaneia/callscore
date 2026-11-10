@@ -1,0 +1,64 @@
+{
+ "guion": "P04b",
+ "perfil": "P04",
+ "motivo": "tarifa",
+ "_nota": "Correcta sin calidez: añadir una línea a la tarifa familiar. Saluda solo con la entidad, fórmula genérica, sondeo y solución completos, despedida seca.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Conecta, buenas tardes."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Quería añadir una línea para mi hijo a mi tarifa, que ya tiene catorce años y me lo está pidiendo todos los días."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Muy bien, con mucho gusto. Para hacer cambios en la tarifa tengo que verificar al titular: ¿me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Seis, cinco, cuatro, tres, dos, uno, cero, nueve, pe. El veintidós de noviembre de mil novecientos setenta y nueve."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, verificado. ¿La línea es para un móvil nuevo o para uno que ya tiene? ¿Y quiere que tenga datos, o solo llamadas?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Tiene un móvil viejo mío. Con datos, pero pocos, que no quiero que se pase el día con el teléfono."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entonces, si lo he entendido bien: línea nueva con pocos datos, y la tarjeta para un móvil que ya tienen. ¿Es así?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, eso es."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le encaja la línea adicional de cinco gigas, por siete euros al mes. La tarjeta le llega por correo en dos o tres días laborables, y la línea se activa sola al meter la tarjeta en el móvil. La verá en su próxima factura."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale. Y si dentro de unos meses veo que no la usa, ¿la puedo quitar sin pagar nada?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Sí, la línea adicional no tiene permanencia: puede darla de baja cuando quiera, sin coste."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Entonces perfecto, póngamela."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Hecho. Línea adicional de cinco gigas contratada; le llega la tarjeta en dos o tres días. Gracias por llamar, adiós."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Adiós."
+  }
+ ]
+}

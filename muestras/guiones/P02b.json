@@ -1,0 +1,44 @@
+{
+ "guion": "P02b",
+ "perfil": "P02",
+ "motivo": "consulta",
+ "_nota": "Ejemplar breve: horario del servicio técnico, sin datos de cuenta. Reconoce la molestia concreta, pregunta qué servicio tiene, responde completo y resume.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué le puedo ayudar?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Una pregunta rápida: si un domingo me falla internet, ¿hay alguien que me atienda? El mes pasado me pasó y no supe a quién llamar."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entiendo, quedarse sin saber a quién llamar un domingo es muy incómodo. ¿Su servicio es de fibra en casa, o de internet en el móvil?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "De fibra, en casa."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Para la fibra, el servicio técnico atiende todos los días, también domingos y festivos, de ocho de la mañana a diez de la noche, en este mismo número. Si pulsa el dos al llamar, va directo a averías."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Ah, genial, no lo sabía."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Se lo resumo: averías de fibra, todos los días de ocho a diez, en este número y pulsando el dos. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, con eso me quedo tranquilo. Gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias a usted. Buenas tardes."
+  }
+ ]
+}

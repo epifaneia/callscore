@@ -1,0 +1,53 @@
+{
+ "guion": "P09a",
+ "perfil": "P09",
+ "motivo": "reclama",
+ "_nota": "Falta de respeto: ante una clienta que reclama por cuarta vez, el agente la corta, le hace repetir, le reprocha que llame tanto y no da salida. Eliminatoria: a revisión de calidad.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas, Conecta."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Hola, buenas. Mire, es la cuarta vez que llamo, porque el técnico no vino el martes, ni tampoco el jueves, y nadie me avisa de nada. Llevo una semana sin internet y estoy harta, de verdad, harta de..."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿DNI y fecha de nacimiento?",
+   "interrumpe": 1.2
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Tres, tres, cuatro, cuatro, cinco, cinco, seis, seis, be. El diez de octubre de mil novecientos setenta y cinco. Y como le decía, el técnico no ha venido ninguno de los dos días que me dieron."
+  },
+  {
+   "hablante": "agente",
+   "texto": "¿Me lo repite? ¿Qué días le dijeron que venía?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¡El martes y el jueves! Ya se lo he dicho. Y las dos veces me quedé en casa esperando toda la mañana, sin ir a trabajar."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Pues mire, señora, por mucho que llame no se va a arreglar antes. Los técnicos van cuando pueden, que tienen muchísimas visitas, y no es la única clienta que está esperando. Y si usted llama cada dos días para contarnos lo mismo, nos hace perder el tiempo a todos, a mí y a los compañeros que podrían estar atendiendo a otras personas."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¿Cómo que les hago perder el tiempo? ¡Son ustedes los que no vienen! ¿Me va a dar una solución o no?"
+  },
+  {
+   "hablante": "agente",
+   "texto": "Yo desde aquí no puedo hacer nada. Ya le he dicho que los técnicos van cuando pueden. Si quiere, llame la semana que viene, pero le van a decir lo mismo que yo. Es lo que hay."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Esto es increíble. Quiero poner una reclamación."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Pues póngala. Adiós."
+  }
+ ]
+}

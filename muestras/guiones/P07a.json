@@ -1,0 +1,52 @@
+{
+ "guion": "P07a",
+ "perfil": "P07",
+ "motivo": "averia",
+ "_nota": "Promete: todo bien llevado y con calidez, pero garantiza el arreglo para mañana y la devolución del mes entero, sin quién, cómo ni confirmación. Eliminatoria aunque el cliente acabe encantado.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenos días, Conecta, le atiende {agente}. ¿En qué puedo ayudarle?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenos días. Desde ayer por la tarde no tengo televisión; la pantalla dice sin señal. Y mañana juega mi equipo, que es lo único que veo en toda la semana. Ya he desenchufado el aparato, he esperado un rato y lo he vuelto a enchufar, como me dijeron otra vez, pero nada."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Vaya, lo siento; quedarse sin televisión justo el fin de semana fastidia mucho. Para revisar su línea, ¿me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Seis, seis, cinco, cinco, cuatro, cuatro, tres, tres, ka. El dos de febrero de mil novecientos sesenta y nueve."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, verificado. ¿Le falla solo la televisión, o también internet? ¿Y el mensaje le sale en todos los canales?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Internet va bien, de hecho le estoy llamando con el ordenador encendido y funciona perfectamente. Y sí, en todos los canales, he ido pasándolos uno por uno y en todos sale lo mismo."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Entendido: solo la televisión, y en todos los canales. Veo que hay una incidencia en la televisión de su zona. No se preocupe, que mañana seguro que está arreglado, y le devolvemos la cuota entera de este mes por las molestias."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "¡Ah, pues estupendo! Muchas gracias, qué amable."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Nada, faltaría más. Entonces queda así: mañana lo tiene funcionando y le devolvemos el mes. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, nada más. Muy agradecida, de verdad."
+  },
+  {
+   "hablante": "agente",
+   "texto": "A usted. Que tenga un buen día."
+  }
+ ]
+}

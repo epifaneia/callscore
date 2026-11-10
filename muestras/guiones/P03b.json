@@ -1,0 +1,78 @@
+{
+ "guion": "P03b",
+ "perfil": "P03",
+ "motivo": "averia",
+ "_nota": "Ejemplar larga: fibra lenta por la noche con prueba de línea y escalado a técnico. Pide permiso y dice cuánto antes de cada espera, explica sin tecnicismos, da cita con franja, aviso y medio. No se resuelve en la llamada; cliente conforme.",
+ "turnos": [
+  {
+   "hablante": "agente",
+   "texto": "Buenas tardes, Conecta, le atiende {agente}. ¿En qué le puedo ayudar?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Buenas tardes. Le llamo porque desde hace una semana la fibra va lentísima por las noches. Por el día va más o menos bien, pero a partir de las nueve es imposible ver nada, y yo trabajo en turno de noche desde casa."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Lo siento; si trabaja de noche desde casa, una conexión lenta justo a esas horas le complica mucho el trabajo. Vamos a averiguar qué pasa. Para acceder a su línea, ¿me dice su DNI y su fecha de nacimiento?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí. Tres, cuatro, cinco, seis, siete, ocho, nueve, cero, uve. Nací el dieciocho de diciembre de mil novecientos ochenta y uno."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias, verificado. Para entenderlo bien: ¿le va lento en todos los aparatos, también en el que tenga conectado por cable, si tiene alguno? ¿Y le pasa todas las noches, o solo algunos días?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Todas las noches. El ordenador del trabajo va por cable y también se arrastra. El móvil, por wifi, igual o peor."
+  },
+  {
+   "hablante": "agente",
+   "texto": "De acuerdo: lento todas las noches desde hace una semana, también por cable. Eso apunta a la línea y no a su wifi. Voy a hacer una prueba de velocidad desde aquí, que tarda un par de minutos. ¿Le importa esperar en línea?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, adelante."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias por esperar. La prueba confirma que la línea pierde velocidad por la noche, cuando hay más gente conectada en su zona. No es algo que usted pueda arreglar desde casa: tiene que revisarlo un técnico en la central. Voy a mirar la agenda para la visita. ¿Me permite un minuto más en espera?",
+   "pausa": 45
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Sí, claro."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias por la paciencia. He abierto la revisión y le he reservado la visita del técnico para el martes, de cuatro a ocho de la tarde, porque así puede comprobarlo con usted a primera hora de la noche. Le llamará media hora antes de llegar, y le enviamos un mensaje al móvil con la cita y el número de la incidencia.",
+   "pausa": 40
+  },
+  {
+   "hablante": "cliente",
+   "texto": "El martes. Bueno, son unos días más de ir lento, pero por lo menos van a venir."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Lo entiendo, y siento que tenga que aguantar unos días más. Le dejo anotado que trabaja de noche, para que el técnico lo tenga en cuenta al revisar la línea."
+  },
+  {
+   "hablante": "cliente",
+   "texto": "Vale, gracias, eso me viene bien."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Le resumo entonces: revisión abierta, visita del técnico el martes de cuatro a ocho, aviso media hora antes y un mensaje con la cita. ¿Puedo ayudarle en algo más?"
+  },
+  {
+   "hablante": "cliente",
+   "texto": "No, eso es todo. Gracias."
+  },
+  {
+   "hablante": "agente",
+   "texto": "Gracias a usted. Buenas tardes."
+  }
+ ]
+}

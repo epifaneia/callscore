@@ -1,0 +1,696 @@
+{
+  "_nota": "Catálogo cerrado de lo que puede pasar en una llamada de la muestra. Cada factor es una línea del formulario, un KPI o el contexto. Cada perfil fija un nivel por factor; entre todos cubren todos los niveles. Nada aleatorio: tools/muestra/catalogo.py comprueba la cobertura y calcula la nota esperada con las fórmulas del pipeline. El reparto del habla no se diseña: se mide en cada llamada y sale lo que la llamada pida; si una llamada exige que el agente explique mucho, está bien. Como la duración, solo se juzga en media.",
+  "factores": [
+    {
+      "id": "motivo",
+      "grupo": "contexto",
+      "nombre": "Motivo de la llamada",
+      "niveles": [
+        {
+          "id": "cargo",
+          "texto": "Cobro duplicado en la factura"
+        },
+        {
+          "id": "averia",
+          "texto": "Avería: sin servicio desde hace días"
+        },
+        {
+          "id": "tarifa",
+          "texto": "Cambio de tarifa"
+        },
+        {
+          "id": "consulta",
+          "texto": "Consulta general, sin datos de la cuenta (horarios, tiendas)"
+        },
+        {
+          "id": "baja",
+          "texto": "Baja del servicio"
+        },
+        {
+          "id": "reclama",
+          "texto": "Reclamación reiterada, cliente enfadado"
+        }
+      ]
+    },
+    {
+      "id": "E1",
+      "grupo": "calidad",
+      "nombre": "Verificación de identidad",
+      "eliminatoria": true,
+      "niveles": [
+        {
+          "id": "si",
+          "logro": true,
+          "texto": "Pide documento y fecha de nacimiento antes de dar o tocar datos"
+        },
+        {
+          "id": "no",
+          "logro": false,
+          "texto": "Lee o cambia datos de la cuenta sin verificar"
+        },
+        {
+          "id": "na",
+          "texto": "No se tocan datos de la cuenta: no aplica, cuenta como cumplida"
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "grupo": "calidad",
+      "nombre": "Trato respetuoso",
+      "eliminatoria": true,
+      "niveles": [
+        {
+          "id": "si",
+          "logro": true,
+          "texto": "Cortesía en toda la llamada, también con el cliente alterado"
+        },
+        {
+          "id": "no",
+          "logro": false,
+          "texto": "Reproche, ironía o respuesta cortante al cliente"
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "grupo": "calidad",
+      "nombre": "Sin promesas no autorizadas",
+      "eliminatoria": true,
+      "niveles": [
+        {
+          "id": "si",
+          "logro": true,
+          "texto": "Dice qué gestiona y cuándo habrá respuesta, sin garantizar el resultado"
+        },
+        {
+          "id": "no",
+          "logro": false,
+          "texto": "Garantiza un reembolso o un plazo que no depende de él"
+        },
+        {
+          "id": "na",
+          "texto": "No surge nada que prometer: cuenta como cumplida"
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "grupo": "calidad",
+      "nombre": "Saludo y presentación",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "Descuelga sin saludar ni presentarse («Dígame»)"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Saluda y da solo la entidad o solo su nombre"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Saludo, entidad, nombre y ofrecimiento de ayuda"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "grupo": "calidad",
+      "nombre": "Sondeo de la necesidad",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "No pregunta: actúa sobre lo primero que oye"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Una pregunta y supone el resto"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Pregunta lo necesario y confirma con sus palabras antes de resolver"
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "grupo": "calidad",
+      "nombre": "Escucha activa",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "Interrumpe varias veces al cliente"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Le hace repetir algo que ya había dicho"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Deja terminar y retoma lo que dijo el cliente"
+        }
+      ]
+    },
+    {
+      "id": "G4",
+      "grupo": "calidad",
+      "nombre": "Empatía",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "Trato mecánico, ignora la molestia"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Solo fórmulas genéricas («disculpe las molestias»)"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Nombra la molestia concreta y se disculpa si es culpa de la empresa"
+        }
+      ]
+    },
+    {
+      "id": "G5",
+      "grupo": "calidad",
+      "nombre": "Solución y siguientes pasos",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "No da solución ni siguiente paso"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Solución vaga: «en breve», «ya le llamarán»"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Qué pasa, quién lo hace, cuándo y por qué medio"
+        }
+      ]
+    },
+    {
+      "id": "G6",
+      "grupo": "calidad",
+      "nombre": "Cierre",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "Corta sin cierre («Adiós»)"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Se despide sin comprobar ni ofrecer más ayuda"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Resume, pregunta si necesita algo más y se despide"
+        }
+      ]
+    },
+    {
+      "id": "G7",
+      "grupo": "calidad",
+      "nombre": "Lenguaje claro",
+      "niveles": [
+        {
+          "id": "0",
+          "logro": false,
+          "texto": "Siglas y tecnicismos que el cliente no entiende (ONT, FTTH, prorrateo)"
+        },
+        {
+          "id": "1",
+          "logro": false,
+          "texto": "Un término técnico sin explicar"
+        },
+        {
+          "id": "2",
+          "logro": true,
+          "texto": "Lenguaje del cliente"
+        }
+      ]
+    },
+    {
+      "id": "N1",
+      "grupo": "calidad",
+      "nombre": "Espera con permiso",
+      "niveles": [
+        {
+          "id": "na",
+          "texto": "No hay espera: cuenta como cumplida"
+        },
+        {
+          "id": "si",
+          "logro": true,
+          "texto": "Explica por qué y cuánto, y espera a que el cliente acepte"
+        },
+        {
+          "id": "no",
+          "logro": false,
+          "texto": "Deja al cliente en silencio sin avisar"
+        }
+      ]
+    },
+    {
+      "id": "duracion",
+      "grupo": "kpi",
+      "nombre": "Duración de la conversación (variedad de la muestra, no un juicio)",
+      "niveles": [
+        {
+          "id": "corta",
+          "valor": 45,
+          "texto": "Menos de un minuto"
+        },
+        {
+          "id": "objetivo",
+          "valor": 100,
+          "texto": "Alrededor de 1 min 40 s (media del pliego de Lanbide)"
+        },
+        {
+          "id": "larga",
+          "valor": 200,
+          "texto": "Más de tres minutos"
+        }
+      ]
+    },
+    {
+      "id": "silencio",
+      "grupo": "kpi",
+      "nombre": "Silencio sobre el total",
+      "niveles": [
+        {
+          "id": "bajo",
+          "valor": 10,
+          "texto": "Pausas normales de conversación"
+        },
+        {
+          "id": "alto",
+          "valor": 35,
+          "texto": "Huecos largos mientras el agente busca"
+        }
+      ]
+    },
+    {
+      "id": "interrupciones",
+      "grupo": "kpi",
+      "nombre": "Interrupciones del agente",
+      "niveles": [
+        {
+          "id": "0",
+          "valor": 0,
+          "texto": "Ninguna"
+        },
+        {
+          "id": "1",
+          "valor": 1,
+          "texto": "Una"
+        },
+        {
+          "id": "3+",
+          "valor": 3,
+          "texto": "Tres o más"
+        }
+      ]
+    },
+    {
+      "id": "resuelto",
+      "grupo": "kpi",
+      "nombre": "Resuelto en la llamada",
+      "niveles": [
+        {
+          "id": "si",
+          "texto": "El motivo queda resuelto"
+        },
+        {
+          "id": "no",
+          "texto": "El cliente tendrá que volver a llamar o esperar a un tercero"
+        }
+      ]
+    },
+    {
+      "id": "satisfaccion",
+      "grupo": "kpi",
+      "nombre": "Cómo termina el cliente",
+      "niveles": [
+        {
+          "id": "0",
+          "texto": "Enfadado o insatisfecho"
+        },
+        {
+          "id": "1",
+          "texto": "Conforme sin más"
+        },
+        {
+          "id": "2",
+          "texto": "Satisfecho y agradecido"
+        }
+      ]
+    }
+  ],
+  "reglas": [
+    {
+      "si": {
+        "motivo": "consulta"
+      },
+      "entonces": {
+        "E1": "na"
+      },
+      "porque": "una consulta general no toca datos de la cuenta"
+    },
+    {
+      "si": {
+        "G3": "0"
+      },
+      "entonces": {
+        "interrupciones": "3+"
+      },
+      "porque": "interrumpir varias veces es lo que mide el contador"
+    },
+    {
+      "si": {
+        "N1": "no"
+      },
+      "entonces": {
+        "silencio": "alto"
+      },
+      "porque": "la espera muda es silencio en la grabación"
+    },
+    {
+      "si": {
+        "E2": "no"
+      },
+      "entonces": {
+        "satisfaccion": "0"
+      },
+      "porque": "nadie acaba satisfecho tras una falta de respeto"
+    }
+  ],
+  "perfiles": [
+    {
+      "id": "P01",
+      "nombre": "Ejemplar",
+      "motivo": "cargo",
+      "resumen": "Todo bien: verifica, sondea, nombra la molestia, solución con plazo y resumen final.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "2",
+        "G3": "2",
+        "G4": "2",
+        "G5": "2",
+        "G6": "2",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "objetivo",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "2"
+      }
+    },
+    {
+      "id": "P02",
+      "nombre": "Ejemplar breve",
+      "motivo": "consulta",
+      "resumen": "Consulta rápida bien atendida: no hay datos que verificar ni nada que prometer.",
+      "niveles": {
+        "E1": "na",
+        "E2": "si",
+        "E3": "na",
+        "G1": "2",
+        "G2": "2",
+        "G3": "2",
+        "G4": "2",
+        "G5": "2",
+        "G6": "2",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "corta",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "2"
+      }
+    },
+    {
+      "id": "P03",
+      "nombre": "Ejemplar larga",
+      "motivo": "averia",
+      "resumen": "Avería compleja bien llevada: pide permiso para la espera, da cita técnica con fecha. No se resuelve en la llamada, y no es culpa suya.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "2",
+        "G3": "2",
+        "G4": "2",
+        "G5": "2",
+        "G6": "2",
+        "G7": "2",
+        "N1": "si",
+        "duracion": "larga",
+        "silencio": "alto",
+        "interrupciones": "0",
+        "resuelto": "no",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P04",
+      "nombre": "Correcta sin calidez",
+      "motivo": "tarifa",
+      "resumen": "Resuelve bien pero en frío: saludo a medias, fórmulas genéricas y despedida seca.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "1",
+        "G2": "2",
+        "G3": "2",
+        "G4": "1",
+        "G5": "2",
+        "G6": "1",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "objetivo",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P05",
+      "nombre": "No pregunta",
+      "motivo": "cargo",
+      "resumen": "Actúa sobre lo primero que oye, da una solución vaga y el cliente tendrá que volver a llamar.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "0",
+        "G3": "2",
+        "G4": "1",
+        "G5": "1",
+        "G6": "1",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "corta",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "no",
+        "satisfaccion": "0"
+      }
+    },
+    {
+      "id": "P06",
+      "nombre": "Interrumpe",
+      "motivo": "reclama",
+      "resumen": "No deja hablar al cliente enfadado: lo corta, acapara la llamada y no reconoce la molestia.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "1",
+        "G3": "0",
+        "G4": "0",
+        "G5": "2",
+        "G6": "2",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "objetivo",
+        "silencio": "bajo",
+        "interrupciones": "3+",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P07",
+      "nombre": "Promete",
+      "motivo": "averia",
+      "resumen": "Amable y resolutivo en apariencia, pero garantiza el arreglo para mañana y la devolución del mes. Eliminatoria aunque el trato sea bueno.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "no",
+        "G1": "2",
+        "G2": "2",
+        "G3": "2",
+        "G4": "2",
+        "G5": "1",
+        "G6": "2",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "objetivo",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "no",
+        "satisfaccion": "2"
+      }
+    },
+    {
+      "id": "P08",
+      "nombre": "Sin verificar",
+      "motivo": "baja",
+      "resumen": "Eficaz y breve, pero tramita la baja con solo el número de teléfono. Eliminatoria.",
+      "niveles": {
+        "E1": "no",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "1",
+        "G3": "2",
+        "G4": "1",
+        "G5": "2",
+        "G6": "1",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "corta",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P09",
+      "nombre": "Falta de respeto",
+      "motivo": "reclama",
+      "resumen": "Ante un cliente que repite su queja, el agente le reprocha que llame tanto y no da salida. Eliminatoria: a revisión de calidad.",
+      "niveles": {
+        "E1": "si",
+        "E2": "no",
+        "E3": "na",
+        "G1": "1",
+        "G2": "1",
+        "G3": "1",
+        "G4": "0",
+        "G5": "0",
+        "G6": "0",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "objetivo",
+        "silencio": "bajo",
+        "interrupciones": "1",
+        "resuelto": "no",
+        "satisfaccion": "0"
+      }
+    },
+    {
+      "id": "P10",
+      "nombre": "Espera muda",
+      "motivo": "tarifa",
+      "resumen": "Busca en el sistema dejando al cliente en silencio sin avisar; sondeo corto y un término técnico.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "1",
+        "G3": "2",
+        "G4": "1",
+        "G5": "2",
+        "G6": "2",
+        "G7": "1",
+        "N1": "no",
+        "duracion": "larga",
+        "silencio": "alto",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P11",
+      "nombre": "Tecnicismos",
+      "motivo": "averia",
+      "resumen": "Explica la avería en jerga; el cliente pregunta una y otra vez y el agente le hace repetir datos.",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "2",
+        "G2": "2",
+        "G3": "1",
+        "G4": "1",
+        "G5": "2",
+        "G6": "2",
+        "G7": "0",
+        "N1": "na",
+        "duracion": "larga",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    },
+    {
+      "id": "P12",
+      "nombre": "Cierre abrupto",
+      "motivo": "baja",
+      "resumen": "Descuelga con «Dígame», tramita bien y cuelga con «Adiós».",
+      "niveles": {
+        "E1": "si",
+        "E2": "si",
+        "E3": "si",
+        "G1": "0",
+        "G2": "2",
+        "G3": "2",
+        "G4": "1",
+        "G5": "2",
+        "G6": "0",
+        "G7": "2",
+        "N1": "na",
+        "duracion": "corta",
+        "silencio": "bajo",
+        "interrupciones": "0",
+        "resuelto": "si",
+        "satisfaccion": "1"
+      }
+    }
+  ]
+}
